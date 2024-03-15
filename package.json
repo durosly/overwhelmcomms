@@ -1,10 +1,9 @@
 {
-	"name": "benchmark-properties",
+	"name": "overwhelmcomms-multiservices",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"dev:cert": "next dev --experimental-https",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
