@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import DisplayRooms from "./__components/display-rooms";
 
 export const metadata = {
@@ -9,7 +10,9 @@ function RoomsPage() {
 		<>
 			<h2 className="text-4xl font-bold my-5">Rooms</h2>
 
-			<DisplayRooms />
+			<Suspense>
+				<DisplayRooms />
+			</Suspense>
 		</>
 	);
 }

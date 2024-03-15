@@ -13,11 +13,14 @@ import {
 import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import NavLink from "./components/nav-links";
 import { NavigationEvents } from "./components/navigation-event";
+import { Suspense } from "react";
 
 export default function PublicLayout({ children }) {
 	return (
 		<div className="drawer">
-			<NavigationEvents />
+			<Suspense>
+				<NavigationEvents />
+			</Suspense>
 			<input
 				id="my-drawer-3"
 				type="checkbox"
