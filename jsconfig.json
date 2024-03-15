@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@/logos/*": ["./public/logos/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/models/*": ["./models/*"],
+      "@/components/*": ["./app/(public)/components/*"],
+      "@/api/*": ["./app/api/*"]
+    }
+  }
+}

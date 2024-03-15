@@ -1,0 +1,51 @@
+{
+	"name": "benchmark-properties",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"dev:cert": "next dev --experimental-https",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.1",
+		"@headlessui/react": "^1.7.17",
+		"@tanstack/react-query": "^5.28.0",
+		"axios": "^1.6.0",
+		"bcryptjs": "^2.4.3",
+		"cloudinary": "^1.41.0",
+		"clsx": "^2.0.0",
+		"comma-number": "^2.1.0",
+		"luxon": "^3.4.3",
+		"mongoose": "^8.0.0",
+		"mongoose-paginate-v2": "1.7.4",
+		"next": "^14.1.0",
+		"next-auth": "^4.24.6",
+		"next-transition-bar": "^1.1.1",
+		"phone": "^3.1.41",
+		"react": "^18.2.0",
+		"react-copy-to-clipboard": "^5.1.0",
+		"react-countup": "^6.5.0",
+		"react-device-detect": "^2.2.3",
+		"react-dom": "^18.2.0",
+		"react-dropzone": "^14.2.3",
+		"react-hot-toast": "^2.4.1",
+		"react-icons": "^5.0.1",
+		"react-loading-skeleton": "^3.3.1",
+		"react-reveal": "^1.2.2",
+		"react-share": "^4.4.1",
+		"tailwind-merge": "^2.0.0",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10",
+		"daisyui": "^4.7.2",
+		"eslint": "^8",
+		"eslint-config-next": "13.5.6",
+		"next-dev-https": "^0.13.3",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.1"
+	}
+}
