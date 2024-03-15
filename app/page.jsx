@@ -21,6 +21,7 @@ import { FaSpotify } from "react-icons/fa";
 import { SiApplepodcasts } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
+import NavLink from "./(public)/components/nav-links";
 
 export const metadata = { title: "Find a new home" };
 
@@ -44,10 +45,27 @@ function Home() {
 									className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
 								>
 									<li>
-										<a>Item 1</a>
+										<NavLink path="/">Home</NavLink>
 									</li>
 									<li>
-										<a>Item 2</a>
+										<NavLink path="/about-us">
+											About Us
+										</NavLink>
+									</li>
+									<li>
+										<NavLink path="/services">
+											Services
+										</NavLink>
+									</li>
+									{/* <li>
+										<NavLink path="/locations">
+											Locations
+										</NavLink>
+									</li> */}
+									<li>
+										<NavLink path="/contact">
+											Contact
+										</NavLink>
 									</li>
 								</ul>
 							</div>
@@ -63,23 +81,21 @@ function Home() {
 						<nav className="navbar-center max-md:hidden">
 							<ul className="menu menu-horizontal px-1">
 								<li>
-									<a>Item 1</a>
+									<NavLink path="/">Home</NavLink>
 								</li>
 								<li>
-									<details>
-										<summary>Parent</summary>
-										<ul className="p-2">
-											<li>
-												<a>Submenu 1</a>
-											</li>
-											<li>
-												<a>Submenu 2</a>
-											</li>
-										</ul>
-									</details>
+									<NavLink path="/about-us">About Us</NavLink>
 								</li>
 								<li>
-									<a>Item 3</a>
+									<NavLink path="/services">Services</NavLink>
+								</li>
+								{/* <li>
+										<NavLink path="/locations">
+											Locations
+										</NavLink>
+									</li> */}
+								<li>
+									<NavLink path="/contact">Contact</NavLink>
 								</li>
 							</ul>
 						</nav>

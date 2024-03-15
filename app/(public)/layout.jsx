@@ -55,7 +55,7 @@ export default function PublicLayout({ children }) {
 							<div className="flex-none px-2 mx-2 relative w-32 h-16">
 								<Image
 									src={logo}
-									alt="benchmark realestate"
+									alt="overwhelmcomms"
 									className="object-contain"
 									fill
 									priority={true}
@@ -76,17 +76,19 @@ export default function PublicLayout({ children }) {
 											About Us
 										</NavLink>
 									</li>
-									{/* <li>
-										<NavLink path="/rooms">Rooms</NavLink>
-									</li>
 									<li>
+										<NavLink path="/services">
+											Services
+										</NavLink>
+									</li>
+									{/* <li>
 										<NavLink path="/locations">
 											Locations
 										</NavLink>
 									</li> */}
 									<li>
-										<NavLink path="/services">
-											Services
+										<NavLink path="/contact">
+											Contact
 										</NavLink>
 									</li>
 								</ul>

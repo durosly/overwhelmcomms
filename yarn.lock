@@ -1037,48 +1037,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"benchmark-properties@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "benchmark-properties@workspace:."
-  dependencies:
-    "@emotion/react": "npm:^11.11.1"
-    "@headlessui/react": "npm:^1.7.17"
-    "@tanstack/react-query": "npm:^5.28.0"
-    autoprefixer: "npm:^10"
-    axios: "npm:^1.6.0"
-    bcryptjs: "npm:^2.4.3"
-    cloudinary: "npm:^1.41.0"
-    clsx: "npm:^2.0.0"
-    comma-number: "npm:^2.1.0"
-    daisyui: "npm:^4.7.2"
-    eslint: "npm:^8"
-    eslint-config-next: "npm:13.5.6"
-    luxon: "npm:^3.4.3"
-    mongoose: "npm:^8.0.0"
-    mongoose-paginate-v2: "npm:1.7.4"
-    next: "npm:^14.1.0"
-    next-auth: "npm:^4.24.6"
-    next-dev-https: "npm:^0.13.3"
-    next-transition-bar: "npm:^1.1.1"
-    phone: "npm:^3.1.41"
-    postcss: "npm:^8"
-    react: "npm:^18.2.0"
-    react-copy-to-clipboard: "npm:^5.1.0"
-    react-countup: "npm:^6.5.0"
-    react-device-detect: "npm:^2.2.3"
-    react-dom: "npm:^18.2.0"
-    react-dropzone: "npm:^14.2.3"
-    react-hot-toast: "npm:^2.4.1"
-    react-icons: "npm:^5.0.1"
-    react-loading-skeleton: "npm:^3.3.1"
-    react-reveal: "npm:^1.2.2"
-    react-share: "npm:^4.4.1"
-    tailwind-merge: "npm:^2.0.0"
-    tailwindcss: "npm:^3.4.1"
-    zod: "npm:^3.22.4"
-  languageName: unknown
-  linkType: soft
-
 "binary-extensions@npm:^2.0.0":
   version: 2.3.0
   resolution: "binary-extensions@npm:2.3.0"
@@ -3819,6 +3777,48 @@ __metadata:
   checksum: 66fba794d425b5be51353035cf3167ce6cfa049059cbb93229b819167687e0f48d2bc4603fcb21b091c99acb516aae1083624675b15c4765b2e4693a085e959c
   languageName: node
   linkType: hard
+
+"overwhelmcomms-multiservices@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "overwhelmcomms-multiservices@workspace:."
+  dependencies:
+    "@emotion/react": "npm:^11.11.1"
+    "@headlessui/react": "npm:^1.7.17"
+    "@tanstack/react-query": "npm:^5.28.0"
+    autoprefixer: "npm:^10"
+    axios: "npm:^1.6.0"
+    bcryptjs: "npm:^2.4.3"
+    cloudinary: "npm:^1.41.0"
+    clsx: "npm:^2.0.0"
+    comma-number: "npm:^2.1.0"
+    daisyui: "npm:^4.7.2"
+    eslint: "npm:^8"
+    eslint-config-next: "npm:13.5.6"
+    luxon: "npm:^3.4.3"
+    mongoose: "npm:^8.0.0"
+    mongoose-paginate-v2: "npm:1.7.4"
+    next: "npm:^14.1.0"
+    next-auth: "npm:^4.24.6"
+    next-dev-https: "npm:^0.13.3"
+    next-transition-bar: "npm:^1.1.1"
+    phone: "npm:^3.1.41"
+    postcss: "npm:^8"
+    react: "npm:^18.2.0"
+    react-copy-to-clipboard: "npm:^5.1.0"
+    react-countup: "npm:^6.5.0"
+    react-device-detect: "npm:^2.2.3"
+    react-dom: "npm:^18.2.0"
+    react-dropzone: "npm:^14.2.3"
+    react-hot-toast: "npm:^2.4.1"
+    react-icons: "npm:^5.0.1"
+    react-loading-skeleton: "npm:^3.3.1"
+    react-reveal: "npm:^1.2.2"
+    react-share: "npm:^4.4.1"
+    tailwind-merge: "npm:^2.0.0"
+    tailwindcss: "npm:^3.4.1"
+    zod: "npm:^3.22.4"
+  languageName: unknown
+  linkType: soft
 
 "p-limit@npm:^3.0.2":
   version: 3.1.0

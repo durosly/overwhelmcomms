@@ -1,5 +1,5 @@
 export const metaInfo = {
-	title: "Benchmark realty management",
+	title: "Your One-Stop Consulting Hub",
 	description:
-		"Benchmark realty management is a nationwide realestate management company with over 60 properties. We specailize in rentals and property acquisition",
+		"Discover comprehensive solutions for events planning, educational and social events, communications consulting, online broadcast (podcast), product marketing and management, online merchandising, and general consulting at Eventful Solutions. We are your trusted partner for all your business needs",
 };
