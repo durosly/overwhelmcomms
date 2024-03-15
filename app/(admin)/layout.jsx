@@ -16,6 +16,7 @@ import {
 import { FiTag } from "react-icons/fi";
 import { NavigationEvents } from "../(public)/components/navigation-event";
 import SignoutButton from "../(public)/components/signout-btn";
+import { Suspense } from "react";
 
 export const metadata = {
 	title: "Admin",
@@ -24,7 +25,9 @@ export const metadata = {
 function AdminLayout({ children }) {
 	return (
 		<div className="drawer max-sm:block lg:drawer-open">
-			<NavigationEvents />
+			<Suspense>
+				<NavigationEvents />
+			</Suspense>
 			<input
 				id="my-drawer-3"
 				type="checkbox"
