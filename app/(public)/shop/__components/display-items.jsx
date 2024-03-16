@@ -173,7 +173,9 @@ function DisplayItems() {
 								<Link
 									href={`${item.link}`}
 									key={item._id}
-									className="block w-full sm:w-[calc((100%_-_1.25rem_)_/_2)] md:w-[calc((100%_-_1.25rem_*_2)_/_3)] rounded-2xl overflow-hidden border hover:border-primary"
+									target="_blank"
+									disabled={item.status === "unavailable"}
+									className="block relative w-full sm:w-[calc((100%_-_1.25rem_)_/_2)] md:w-[calc((100%_-_1.25rem_*_2)_/_3)] rounded-2xl overflow-hidden border hover:border-primary"
 								>
 									<div className="relative h-80 bg-slate-500">
 										<Skeleton
@@ -193,28 +195,27 @@ function DisplayItems() {
 											{item.title}
 										</h3>
 										<p className="text-sm">{item.desc}</p>
-										<p className="flex items-center gap-2 text-slate-400 text-sm">
-											<FiMapPin className="w-5 h-5" />
-											<span>{item.location}</span>
+										<p className="flex items-center gap-2 text-slate-400 text-sm capitalize">
+											{/* <FiMapPin className="w-5 h-5" /> */}
+											<span>{item.category}</span>
 										</p>
-										<div className="flex gap-2">
-											<div className="flex-1 flex gap-2 items-center">
-												<BiBath className="w-5 h-5 fill-primary" />
-												<span>{item.baths} Baths</span>
-											</div>
-											<div className="flex-1 flex gap-2 items-center">
-												<LuBedSingle className="w-5 h-5 stroke-primary" />
-												<span>{item.beds} Beds</span>
-											</div>
-											<div className="flex-1 flex gap-2 items-center">
-												<MdOutlineOtherHouses className="w-5 h-5 fill-primary" />
-												<span>
-													{commaNumber(item.space)}{" "}
-													sqft
+										<div className="flex flex-wrap gap-2">
+											{item.features.map((feature) => (
+												<span className="badge">
+													{feature}
 												</span>
-											</div>
+											))}
 										</div>
 									</div>
+									<span
+										className={`absolute top-5 right-5 z-50 badge badge-sm ${
+											item.status === "unavailable"
+												? "badge-warning"
+												: "badge-success"
+										}`}
+									>
+										{item.status}
+									</span>
 								</Link>
 							))
 						) : (
