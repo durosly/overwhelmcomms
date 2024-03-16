@@ -1,22 +1,20 @@
 import logoImg from "@/logos/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import {
 	FiGrid,
-	FiHome,
-	FiInfo,
 	FiLogOut,
 	FiMail,
+	FiMic,
 	FiMousePointer,
 	FiSettings,
 	FiSidebar,
-	FiUsers,
+	FiTag,
 	FiX,
 } from "react-icons/fi";
-import { FiTag } from "react-icons/fi";
 import { NavigationEvents } from "../(public)/components/navigation-event";
 import SignoutButton from "../(public)/components/signout-btn";
-import { Suspense } from "react";
 
 export const metadata = {
 	title: "Admin",
@@ -126,6 +124,12 @@ function AdminLayout({ children }) {
 							<Link href="/admin/shop">
 								<FiTag className="h-6 w-6" />
 								<span>Shop</span>
+							</Link>
+						</li>
+						<li>
+							<Link href="/admin/podcast">
+								<FiMic className="h-6 w-6" />
+								<span>Podcast</span>
 							</Link>
 						</li>
 						{/* <li>

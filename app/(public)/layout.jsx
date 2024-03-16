@@ -10,6 +10,7 @@ import {
 	FiMapPin,
 	FiLayers,
 } from "react-icons/fi";
+import { FiMic } from "react-icons/fi";
 import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import NavLink from "./components/nav-links";
 import { NavigationEvents } from "./components/navigation-event";
@@ -81,11 +82,11 @@ export default function PublicLayout({ children }) {
 											Services
 										</NavLink>
 									</li>
-									{/* <li>
-										<NavLink path="/locations">
-											Locations
+									<li>
+										<NavLink path="/podcast">
+											Podcast
 										</NavLink>
-									</li> */}
+									</li>
 									<li>
 										<NavLink path="/contact">
 											Contact
@@ -196,7 +197,7 @@ export default function PublicLayout({ children }) {
 					</aside>
 				</footer>
 			</div>
-			<div className="drawer-side">
+			<div className="drawer-side z-50">
 				<label
 					htmlFor="my-drawer-3"
 					aria-label="close sidebar"
@@ -228,9 +229,9 @@ export default function PublicLayout({ children }) {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink path="/rooms">
-								<FiLayout className="w-5 h-5" />
-								<span>Rooms</span>
+							<NavLink path="/podcast">
+								<FiMic className="w-5 h-5" />
+								<span>Podcast</span>
 							</NavLink>
 						</li>
 						<li>
