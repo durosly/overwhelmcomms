@@ -18,7 +18,7 @@ async function getItems(request) {
 			query["title"] = { $regex: location, $options: "i" };
 		}
 
-		if (category !== null && category !== "") {
+		if (category !== null && category !== "" && category !== "all") {
 			query["category"] = category;
 		}
 

@@ -103,18 +103,20 @@ function ItemImages({ id }) {
 							<Empty message={"No image uploaded yet"} />
 						) : null}
 					</div>
-					<div className="card-actions">
-						<button
-							className="btn btn-primary"
-							onClick={() =>
-								document
-									.getElementById("upload-images")
-									.showModal()
-							}
-						>
-							Upload
-						</button>
-					</div>
+					{!isPending && !!dbImages && !dbImages.length ? (
+						<div className="card-actions">
+							<button
+								className="btn btn-primary"
+								onClick={() =>
+									document
+										.getElementById("upload-images")
+										.showModal()
+								}
+							>
+								Upload
+							</button>
+						</div>
+					) : null}
 				</div>
 			</div>
 
@@ -172,6 +174,7 @@ function DropImageZone({ setFiles }) {
 		accept: {
 			"image/*": [],
 		},
+		maxFiles: 1,
 	});
 	return (
 		<div
@@ -187,7 +190,7 @@ function DropImageZone({ setFiles }) {
 					isDragActive ? "stroke-primary/30" : "stroke-gray-300"
 				} `}
 			/>
-			<p>Drag images here or click to upload</p>
+			<p>Drag image here or click to upload</p>
 		</div>
 	);
 }

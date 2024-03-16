@@ -89,10 +89,22 @@ function DisplayItems() {
 						>
 							-- select category --
 						</option>
-						<option value="1">1 bedroom</option>
-						<option value="2">2 bedroom</option>
-						<option value="3">3 bedroom</option>
+
 						<option value="all">All</option>
+						<option value="fashion">Fashion</option>
+						<option value="furniture and decor">
+							furniture and decoration
+						</option>
+						<option value="media">Media</option>
+						<option value="health and wellness">
+							health and wellness
+						</option>
+						<option value="food and beverage">
+							food and beverage
+						</option>
+						<option value="cosmetics and body care">
+							Cosmetics and body care
+						</option>
 					</select>
 				</div>
 			</form>
@@ -159,7 +171,7 @@ function DisplayItems() {
 						{docs && docs.length > 0 ? (
 							docs.map((item) => (
 								<Link
-									href={`/rooms/${item._id}`}
+									href={`${item.link}`}
 									key={item._id}
 									className="block w-full sm:w-[calc((100%_-_1.25rem_)_/_2)] md:w-[calc((100%_-_1.25rem_*_2)_/_3)] rounded-2xl overflow-hidden border hover:border-primary"
 								>

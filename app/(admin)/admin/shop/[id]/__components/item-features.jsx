@@ -1,9 +1,8 @@
 "use client";
 
-import { queryClient } from "@/app/(public)/components/client-wrapper";
 import Empty from "@/app/(public)/components/empty";
 import { handleClientError } from "@/lib/utils";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import { FiCheckCircle, FiTrash2 } from "react-icons/fi";
@@ -11,6 +10,7 @@ import Skeleton from "react-loading-skeleton";
 import toast from "react-hot-toast";
 
 function ItemFeatures({ id }) {
+	const queryClient = useQueryClient();
 	const [edit, setEdit] = useState(false);
 	const [features, setFeatures] = useState([]);
 	const [feature, setFeature] = useState("");
@@ -48,7 +48,7 @@ function ItemFeatures({ id }) {
 		},
 	});
 
-	const queryResponse = data?.data?.apartment || {};
+	const queryResponse = data?.data?.item || {};
 	const { features: dbFeatures } = queryResponse;
 
 	useEffect(() => {
@@ -133,7 +133,7 @@ function ItemFeatures({ id }) {
 					<ul className="mb-5 space-y-2">
 						{isPending ? (
 							<Skeleton count={5} />
-						) : dbFeatures.length > 0 ? (
+						) : dbFeatures && dbFeatures.length > 0 ? (
 							dbFeatures.map((item) => (
 								<li
 									key={item}

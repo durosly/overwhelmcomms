@@ -101,7 +101,7 @@ function AddItemToShop() {
 								name="category"
 								id="category"
 								disabled={isPending}
-								className="input input-bordered"
+								className="input input-bordered capitalize"
 								value={item.category}
 								onChange={(e) =>
 									setItem({
@@ -117,7 +117,19 @@ function AddItemToShop() {
 									-- select category --
 								</option>
 								<option value="fashion">Fashion</option>
-								<option value="furniture">Furniture</option>
+								<option value="furniture and decor">
+									furniture and decoration
+								</option>
+								<option value="media">Media</option>
+								<option value="health and wellness">
+									health and wellness
+								</option>
+								<option value="food and beverage">
+									food and beverage
+								</option>
+								<option value="cosmetics and body care">
+									Cosmetics and body care
+								</option>
 							</select>
 						</div>
 						<div className="form-control">

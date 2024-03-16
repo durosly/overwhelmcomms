@@ -23,7 +23,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import NavLink from "./(public)/components/nav-links";
 
-export const metadata = { title: "Find a new home" };
+export const metadata = { title: "Your One-Stop Consulting Hub" };
 
 function Home() {
 	return (

@@ -42,9 +42,7 @@ const ItemUpdateFeaturesValidationSchema = z.object({
 		.nonempty({ message: "Features cannot be empty" }),
 });
 const ItemUpdateImagessValidationSchema = z.object({
-	images: z
-		.array(z.string())
-		.nonempty({ message: "Features cannot be empty" }),
+	images: z.array(z.string()).nonempty({ message: "Images cannot be empty" }),
 });
 
 const ItemUpdateStatusValidationSchema = z.object({
@@ -64,7 +62,12 @@ const ItemUpdateDescriptionValidationSchema = z.object({
 // 	ApartmentUpdateTitleValidationSchema
 // ).merge(ApartmentUpdateTypeValidationSchema);
 
-export { ItemCreateValidationSchema, ItemUpdateStatusValidationSchema };
+export {
+	ItemCreateValidationSchema,
+	ItemUpdateStatusValidationSchema,
+	ItemUpdateFeaturesValidationSchema,
+	ItemUpdateImagessValidationSchema,
+};
 
 const ItemModel = mongoose.models.Item || mongoose.model("Item", itemSchema);
 
