@@ -1,5 +1,5 @@
-import TotalCustomer from "./__components/total-customer";
-import TotalProperties from "./__components/total-properties";
+import TotalItems from "./__components/total-item";
+import TotalPodcast from "./__components/total-podcast";
 
 function DashboardPage() {
 	return (
@@ -9,8 +9,8 @@ function DashboardPage() {
 			</div>
 
 			<div className="flex flex-col sm:flex-row flex-wrap gap-10">
-				<TotalProperties />
-				<TotalCustomer />
+				<TotalPodcast />
+				<TotalItems />
 			</div>
 		</>
 	);
