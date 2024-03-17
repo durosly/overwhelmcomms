@@ -322,7 +322,7 @@ function Home() {
 				/>
 			</svg>
 
-			<div className="flex max-sm:flex-col gap-5 px-5 sm:px-10 md:px-20 mt-10 mb-10">
+			<div className="flex max-sm:flex-col gap-5 px-5 sm:px-10 md:px-20 mt-10 mb-14">
 				<div className="flex-1">
 					<div className="relative aspect-square sm:h-[400px] rounded-2xl overflow-hidden">
 						<Image
@@ -338,50 +338,46 @@ function Home() {
 						<span className="text-primary">unique</span> from others
 					</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Nihil voluptas error eum possimus ut reiciendis
-						mollitia neque vel repellendus esse! Non ipsam sit et
-						unde quibusdam excepturi ratione? Dolore, nam?
+						At Overwhelmcomms Solutions, we pride ourselves on
+						offering unparalleled services tailored to meet your
+						unique needs. Here's why we stand out from the crowd:
 					</p>
 
-					<ul className="space-y-2">
+					<ul className="space-y-2 capitalize">
 						<li className="flex gap-5 items-center">
 							<LuCheckCircle className="w-5 text-success" />
-							<p>Lorem ipsum dolor sit amet.</p>
+							<p>We prefer a Tailored Approach.</p>
 						</li>
 						<li className="flex gap-5 items-center">
 							<LuCheckCircle className="w-5 text-success" />
-							<p>Lorem ipsum dolor sit amet.</p>
+							<p>
+								We provide Expertise Across several Industries.
+							</p>
 						</li>
 						<li className="flex gap-5 items-center">
 							<LuCheckCircle className="w-5 text-success" />
-							<p>Lorem ipsum dolor sit amet.</p>
+							<p>We are Customer-Centric.</p>
 						</li>
 						<li className="flex gap-5 items-center">
 							<LuCheckCircle className="w-5 text-success" />
-							<p>Lorem ipsum dolor sit amet.</p>
+							<p>We provide Innovative Solutions.</p>
 						</li>
 						<li className="flex gap-5 items-center">
 							<LuCheckCircle className="w-5 text-success" />
-							<p>Lorem ipsum dolor sit amet.</p>
+							<p>We pay Attention to Detail.</p>
 						</li>
 						<li className="flex gap-5 items-center">
 							<LuCheckCircle className="w-5 text-success" />
-							<p>Lorem ipsum dolor sit amet.</p>
+							<p>We provide Seamless Execution.</p>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<div className="px-5 sm:px-10 md:px-20 space-y-5 text-center mb-10">
+			<div className="px-5 sm:px-10 md:px-20 space-y-10 text-center mb-10">
 				<h2 className="text-4xl font-bold">
 					What we do <span className="text-primary">best</span>
 				</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Tempore, iure quod ut eum praesentium labore qui eaque
-					accusamus natus reprehenderit?
-				</p>
 
 				<div className="flex flex-wrap gap-5">
 					<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
@@ -427,6 +423,12 @@ function Home() {
 						</p>
 					</div>
 				</div>
+
+				<p className="p-5 bg-primary/10 rounded-xl">
+					Experience the Overwhelmcomms Solutions difference today and
+					discover why we're the preferred choice for all your event
+					planning and consulting needs.
+				</p>
 			</div>
 
 			<svg

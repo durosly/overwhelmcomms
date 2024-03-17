@@ -1,15 +1,20 @@
-import Image from "next/image";
+import FadeAnimation from "@/components/fade-animation";
 import serviceImg from "@/public/images/service.jpg";
+import Image from "next/image";
 import {
-	FiEye,
-	FiWifi,
 	FiBatteryCharging,
-	FiSettings,
+	FiCoffee,
 	FiMap,
 	FiPhoneCall,
-	FiCoffee,
+	FiSettings,
+	FiWifi,
 } from "react-icons/fi";
-import FadeAnimation from "@/components/fade-animation";
+import { FiPackage } from "react-icons/fi";
+import { FiTrendingUp } from "react-icons/fi";
+import { FiMic } from "react-icons/fi";
+import { FiBook } from "react-icons/fi";
+import { FiCalendar } from "react-icons/fi";
+import { FiBriefcase } from "react-icons/fi";
 
 export const metadata = { title: "Find out what else we can do for you" };
 
@@ -18,15 +23,19 @@ function ServicesPage() {
 		<>
 			<h2 className="text-4xl font-bold my-5">Services</h2>
 			<p className="mb-20">
-				At Benchmark Real Estate Company, we take pride in offering a
-				wide range of services designed to elevate your student
-				accommodation experience. We believe that your comfort and
-				well-being are paramount, and our services reflect this
-				commitment. Explore the services that set us apart:
+				We are a company that offers a diverse range of services such as
+				events planning, educational and social events, communications
+				consulting, online broadcast (podcast), product marketing and
+				management, online merchandising, and general consulting can be
+				described as a full-service or integrated marketing and events
+				firm. Alternatively, it could be referred to as a multifaceted
+				or comprehensive consulting company. The specific term used may
+				depend on the primary focus or specialization of the company.
+				Explore the services that set us apart:
 			</p>
 
 			<div className="md:flex gap-10 mb-20">
-				<div className="relative w-full bg-slate-300 md:w-96 h-52 md:h-auto aspect-square rounded-2xl overflow-hidden">
+				<div className="flex-1 relative w-full bg-slate-300 md:w-96 h-52 md:h-auto aspect-square rounded-2xl overflow-hidden">
 					<Image
 						src={serviceImg}
 						alt=""
@@ -43,85 +52,122 @@ function ServicesPage() {
 						<div>
 							<div className="flex gap-2 items-center mb-2">
 								<div className="w-8 bg-primary/20 rounded-md aspect-square flex justify-center items-center">
+									<FiCalendar className="w-4 h-4 stroke-primary" />
+								</div>
+								<h2 className="text-xl font-semibold text-left">
+									Events Planning and Management
+								</h2>
+							</div>
+							<p className="pl-10">
+								Let us transform your vision into reality with
+								our expert event planning and management
+								services. From concept creation to flawless
+								execution, we handle every detail to ensure your
+								event is a memorable success.
+							</p>
+						</div>
+						<div>
+							<div className="flex gap-2 items-center mb-2">
+								<div className="w-8 bg-primary/20 rounded-md aspect-square flex justify-center items-center">
+									<FiBook className="w-4 h-4 stroke-primary" />
+								</div>
+								<h2 className="text-xl font-semibold text-left">
+									Educational and Social Events Coordination
+								</h2>
+							</div>
+							<p className="pl-10">
+								Elevate your educational and social events with
+								our professional coordination services. Whether
+								it's a conference, seminar, or networking event,
+								we specialize in creating engaging and impactful
+								experiences for all attendees.
+							</p>
+						</div>
+						<div>
+							<div className="flex gap-2 items-center mb-2">
+								<div className="w-8 bg-primary/20 rounded-md aspect-square flex justify-center items-center">
 									<FiWifi className="w-4 h-4 stroke-primary" />
 								</div>
 								<h2 className="text-xl font-semibold text-left">
-									Unlimited internet connection
+									Communications Consulting
 								</h2>
 							</div>
 							<p className="pl-10">
-								We offer a 24/7 unlimited Internet connection.
+								Unlock the power of effective communication with
+								our strategic consulting services. We'll help
+								you craft compelling messages, build strong
+								relationships, and navigate any communication
+								challenges to ensure your voice is heard loud
+								and clear.
 							</p>
 						</div>
 						<div>
 							<div className="flex gap-2 items-center mb-2">
 								<div className="w-8 bg-primary/20 rounded-md aspect-square flex justify-center items-center">
-									<FiBatteryCharging className="w-4 h-4 stroke-primary" />
+									<FiMic className="w-4 h-4 stroke-primary" />
 								</div>
 								<h2 className="text-xl font-semibold text-left">
-									Water &amp; Power Supply
+									Online Broadcast (Podcast) Production
 								</h2>
 							</div>
 							<p className="pl-10">
-								There is constant water supply for bathing and
-								we provide dispenser water for drinking.
+								Engage your audience like never before with our
+								expert podcast production services. From content
+								development to distribution strategy, we'll help
+								you create captivating audio content that
+								resonates with your target audience.
 							</p>
 						</div>
 						<div>
 							<div className="flex gap-2 items-center mb-2">
 								<div className="w-8 bg-primary/20 rounded-md aspect-square flex justify-center items-center">
-									<FiSettings className="w-4 h-4 stroke-primary" />
+									<FiPackage className="w-4 h-4 stroke-primary" />
 								</div>
 								<h2 className="text-xl font-semibold text-left">
-									Repairs
+									Product Marketing and Management
 								</h2>
 							</div>
 							<p className="pl-10">
-								We have ready to work people to fix any problems
-								that occur.
+								Drive your product's success with our tailored
+								marketing and management solutions. We'll
+								develop comprehensive strategies to launch,
+								promote, and manage your products effectively,
+								ensuring maximum exposure and profitability.
 							</p>
 						</div>
 						<div>
 							<div className="flex gap-2 items-center mb-2">
 								<div className="w-8 bg-primary/20 rounded-md aspect-square flex justify-center items-center">
-									<FiMap className="w-4 h-4 stroke-primary" />
+									<FiTrendingUp className="w-4 h-4 stroke-primary" />
 								</div>
 								<h2 className="text-xl font-semibold text-left">
-									Transportation
+									Online Merchandising Strategies
 								</h2>
 							</div>
 							<p className="pl-10">
-								We offer transportation for students, to and
-								from school.
+								Amplify your online presence and boost sales
+								with our innovative merchandising strategies.
+								From e-commerce optimization to compelling
+								product displays, we'll help you showcase your
+								offerings in the best possible light.
 							</p>
 						</div>
 						<div>
 							<div className="flex gap-2 items-center mb-2">
 								<div className="w-8 bg-primary/20 rounded-md aspect-square flex justify-center items-center">
-									<FiPhoneCall className="w-4 h-4 stroke-primary" />
+									<FiBriefcase className="w-4 h-4 stroke-primary" />
 								</div>
 								<h2 className="text-xl font-semibold text-left">
-									24/7 support
+									General Consulting Services
 								</h2>
 							</div>
 							<p className="pl-10">
-								We have a matron ready to attend to the students
-								and we are just a call away.
-							</p>
-						</div>
-						<div>
-							<div className="flex gap-2 items-center mb-2">
-								<div className="w-8 bg-primary/20 rounded-md aspect-square flex justify-center items-center">
-									<FiCoffee className="w-4 h-4 stroke-primary" />
-								</div>
-								<h2 className="text-xl font-semibold text-left">
-									Breakfast
-								</h2>
-							</div>
-							<p className="pl-10">
-								We provide breakfast for the students. There is
-								a cook available to prepare the food every
-								morning.
+								Partner with us for all your consulting needs
+								and gain access to expert advice and guidance
+								across various business areas. Whether you need
+								strategic planning, market analysis, or
+								operational support, we're here to help you
+								achieve your goals.
 							</p>
 						</div>
 					</div>
@@ -129,12 +175,16 @@ function ServicesPage() {
 			</div>
 			<FadeAnimation bottom>
 				<p className="mb-20">
-					At Benchmark Real Estate Company, our services are tailored
-					to provide you with a hassle-free, secure, and comfortable
-					student living experience. We believe that the services we
-					offer will enhance your time in university, allowing you to
-					focus on your studies and enjoy your vibrant student
-					community. Discover the Benchmark difference today.
+					At Overwhelmcomms Solutions, our comprehensive suite of
+					services is designed to offer you seamless event planning,
+					effective communications consulting, and dynamic online
+					broadcast solutions. We understand the importance of
+					creating memorable experiences and providing strategic
+					guidance to ensure the success of your events and marketing
+					initiatives. Let us handle the details while you focus on
+					what matters most - engaging with your audience and
+					achieving your business goals. Experience the Overwhelmcomms
+					Solutions advantage today.
 				</p>
 			</FadeAnimation>
 		</>

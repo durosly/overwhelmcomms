@@ -31,8 +31,8 @@ function ContactUsPage() {
 							</li>
 							<li className="flex gap-2 items-center">
 								<FiMail className="stroke-primary" />
-								<a href="mailto:info@benchmark.com">
-									info@benchmark.com
+								<a href="mailto:info@overwhelmcomms.com">
+									info@overwhelmcomms.com
 								</a>
 							</li>
 							<li className="flex gap-2 items-center">

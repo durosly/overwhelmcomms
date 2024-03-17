@@ -1,5 +1,5 @@
 import Image from "next/image";
-import frontApartment from "@/public/images/front-apartment.png";
+import landmark from "@/public/images/landmark.jpg";
 import { FiEye, FiCrosshair } from "react-icons/fi";
 import Link from "next/link";
 import FadeAnimation from "@/components/fade-animation";
@@ -11,14 +11,17 @@ function AboutUsPage() {
 		<>
 			<h2 className="text-4xl font-bold my-5">About Us</h2>
 			<p className="mb-20">
-				Welcome to a groundbreaking student accommodation concept,
-				meticulously crafted with your comfort and convenience in mind.
-				At Benchmark, we understand that the journey through higher
-				education is not just about textbooks and lectures; it&apos;s
-				also about the quality of life you experience during your
-				student years. That&apos;s why we&apos;ve reimagined student
-				housing, creating a living environment that goes beyond
-				traditional dormitories and apartments.
+				Overwhelm Communication International is a leading provider of
+				event planning, communications consulting, and marketing
+				services. Our experienced team is dedicated to delivering
+				outstanding results and exceeding client expectations. We offer
+				innovative solutions tailored to meet the unique needs of each
+				client, leveraging the latest technologies and strategies to
+				make every event and communication initiative a success. With a
+				commitment to excellence and a focus on building strong client
+				relationships, Overwhelm Communication International is your
+				trusted partner for unforgettable experiences and achieving your
+				business goals.
 			</p>
 
 			<div className="md:flex gap-10 mb-20">
@@ -28,7 +31,7 @@ function AboutUsPage() {
 				>
 					<div className="relative w-full md:w-96 h-52 md:h-auto aspect-square rounded-2xl overflow-hidden">
 						<Image
-							src={frontApartment}
+							src={landmark}
 							alt=""
 							fill
 							className="object-cover"
@@ -52,7 +55,7 @@ function AboutUsPage() {
 								ssrReveal
 							>
 								<h2 className="text-3xl font-semibold text-left">
-									Our Vision
+									Our Mission
 								</h2>
 							</FadeAnimation>
 						</div>
@@ -62,14 +65,15 @@ function AboutUsPage() {
 							delay={1000}
 						>
 							<p>
-								At Benchmark, we&apos;ve set out to redefine the
-								student living experience. We believe that every
-								student deserves a comfortable, safe, and
-								inspiring place to call home while pursuing
-								their educational dreams. Our vision is to
-								create vibrant and supportive communities that
-								foster personal and academic growth, making your
-								university years truly memorable.
+								At Overwhelm Communication International, we are
+								committed to inspiring, redefining, and
+								amplifying possibilities with one event, idea,
+								and product at a time. Through our innovative
+								solutions, creative vision, and unwavering
+								dedication. We are committed to empowering our
+								clients and communities to surpass limitations,
+								achieve greatness, and shape a future filled
+								with boundless opportunities
 							</p>
 						</FadeAnimation>
 					</div>
@@ -89,7 +93,7 @@ function AboutUsPage() {
 								ssrReveal
 							>
 								<h2 className="text-3xl font-semibold text-left">
-									Our Goals
+									Brand Objectives
 								</h2>
 							</FadeAnimation>
 						</div>
@@ -99,27 +103,13 @@ function AboutUsPage() {
 							ssrReveal
 						>
 							<p>
-								At Benchmark, our goal is to provide you with a
-								student living experience that enhances your
-								academic journey, fosters personal growth, and
-								creates unforgettable memories. We invite you to
-								explore our exceptional properties and see for
-								yourself how we&apos;re redefining the way
-								students live during their university years.
+								To inspire individuals and organizations to
+								reach new heights, redefine standards, and
+								amplify possibilities, igniting a world of
+								endless potential and innovation.
 							</p>
 						</FadeAnimation>
 					</div>
-					<FadeAnimation
-						right
-						delay={1000}
-						ssrReveal
-					>
-						<p>
-							Your education is a journey, and we&apos;re here to
-							make it extraordinary. Discover a new standard of
-							student living with us.
-						</p>
-					</FadeAnimation>
 				</div>
 			</div>
 
@@ -134,91 +124,99 @@ function AboutUsPage() {
 					delay={500}
 				>
 					<p className="mb-10 ">
-						At Benchmark Real Estate Company, we understand that
-						finding the perfect student accommodation is a crucial
-						decision in your academic journey. Here&apos;s why you
-						should choose us:
+						Overwhelm Communication International is where
+						excellence meets innovation. As you navigate through the
+						myriad of options for event planning, communications
+						consulting, and marketing services, allow us to present
+						why choosing us is your best decision. With a commitment
+						to exceeding expectations, a penchant for creativity,
+						and a dedication to seamless execution, we stand out as
+						your premier partner for all your event and
+						communication needs.
 					</p>
 				</FadeAnimation>
 				<div className="flex flex-wrap gap-10 mb-20">
 					<FadeAnimation top>
 						<div className="sm:w-[calc((100%_-_2.5rem)_/_2)] md:w-[calc((100%_-_2.5rem_*_2)_/_3)] text-center border py-10 px-10 rounded-2xl bg-primary/10 border-primary">
 							<h3 className="font-bold text-xl mb-5">
-								Specialized for Students
+								Expertise Across Diverse Industries
 							</h3>
 							<p>
-								We specialize in student housing, which means
-								our properties are designed with your needs in
-								mind. From quiet study spaces to vibrant common
-								areas, we offer the perfect blend of comfort and
-								convenience for students like you.
+								Our team brings a wealth of experience and
+								expertise across various industries, ensuring
+								that we understand your unique needs and can
+								tailor our services to meet your specific
+								requirements.
 							</p>
 						</div>
 					</FadeAnimation>
 					<FadeAnimation top>
 						<div className="sm:w-[calc((100%_-_2.5rem)_/_2)] md:w-[calc((100%_-_2.5rem_*_2)_/_3)] text-center border py-10 px-10 rounded-2xl bg-primary/10 border-primary">
 							<h3 className="font-bold text-xl mb-5">
-								Proximity to Campuses
+								Exceptional Customer Service
 							</h3>
 							<p>
-								Our properties are strategically located near
-								universities and colleges, making it easy for
-								you to commute to classes and access campus
-								facilities without the hassle of long commutes.
+								At Eventful Solutions, your satisfaction is our
+								top priority. We go above and beyond to provide
+								exceptional customer service, ensuring that
+								every interaction with us is smooth, efficient,
+								and enjoyable.
 							</p>
 						</div>
 					</FadeAnimation>
 					<FadeAnimation top>
 						<div className="sm:w-[calc((100%_-_2.5rem)_/_2)] md:w-[calc((100%_-_2.5rem_*_2)_/_3)] text-center border py-10 px-10 rounded-2xl bg-primary/10 border-primary">
 							<h3 className="font-bold text-xl mb-5">
-								Safety First
+								Attention to Detail
 							</h3>
 							<p>
-								Your safety is our top priority. Our properties
-								feature advanced security systems and 24/7
-								surveillance to ensure you can focus on your
-								studies with peace of mind.
+								From the initial planning stages to the final
+								execution, we pay meticulous attention to detail
+								to ensure that every aspect of your event or
+								communication campaign is flawless and exceeds
+								your expectations.
 							</p>
 						</div>
 					</FadeAnimation>
 					<FadeAnimation top>
 						<div className="sm:w-[calc((100%_-_2.5rem)_/_2)] md:w-[calc((100%_-_2.5rem_*_2)_/_3)] text-center border py-10 px-10 rounded-2xl bg-primary/10 border-primary">
 							<h3 className="font-bold text-xl mb-5">
-								Modern Amenities
+								Strategic Approach
 							</h3>
 							<p>
-								Enjoy the convenience of modern amenities,
-								including high-speed internet, fully equipped
-								kitchens, laundry facilities, and more, all
-								designed to make your student life comfortable.
+								We take a strategic approach to every project,
+								leveraging our industry knowledge and insights
+								to develop comprehensive plans that drive
+								results and align with your overall business
+								objectives.
 							</p>
 						</div>
 					</FadeAnimation>
 					<FadeAnimation top>
 						<div className="sm:w-[calc((100%_-_2.5rem)_/_2)] md:w-[calc((100%_-_2.5rem_*_2)_/_3)] text-center border py-10 px-10 rounded-2xl bg-primary/10 border-primary">
 							<h3 className="font-bold text-xl mb-5">
-								Community Living
+								Flexibility and Adaptability
 							</h3>
 							<p>
-								We foster a sense of community. You&apos;ll have
-								the opportunity to meet like-minded students,
-								engage in social activities, and build lasting
-								friendships that will enrich your college
-								experience.
+								We understand that plans can change, and we're
+								always ready to adapt and pivot to ensure that
+								your event or communication initiative remains
+								on track and achieves its goals, no matter what
+								challenges arise.
 							</p>
 						</div>
 					</FadeAnimation>
 					<FadeAnimation top>
 						<div className="sm:w-[calc((100%_-_2.5rem)_/_2)] md:w-[calc((100%_-_2.5rem_*_2)_/_3)] text-center border py-10 px-10 rounded-2xl bg-primary/10 border-primary">
 							<h3 className="font-bold text-xl mb-5">
-								Responsive Support
+								Proven Track Record of Success
 							</h3>
 							<p>
-								Our dedicated management team is always ready to
-								assist you. Whether it&apos;s a maintenance
-								request, a question, or guidance on local
-								resources, we&apos;re here to ensure your stay
-								is hassle-free.
+								With a long history of successful events and
+								communication campaigns under our belt, you can
+								trust that Eventful Solutions has the experience
+								and expertise to deliver results that exceed
+								your expectations time and time again.
 							</p>
 						</div>
 					</FadeAnimation>
@@ -238,12 +236,14 @@ function AboutUsPage() {
 				</div>
 				<FadeAnimation left>
 					<p>
-						Choosing Benchmark Real Estate Company means choosing a
-						student accommodation experience that is tailored to
-						your academic and personal growth. We are committed to
-						helping you make the most of your university years. Join
-						our community today and discover the ideal place to call
-						home during your educational journey.
+						Consider Overwhelm Communication International as your
+						trusted partner. With our expertise, dedication to
+						excellence, and proven track record of success, we are
+						confident that choosing us means choosing unparalleled
+						quality and service. Let us bring your vision to life
+						and elevate your events and communication initiatives to
+						new heights. Experience the Overwhelm Communication
+						International difference today.
 					</p>
 				</FadeAnimation>
 			</div>
