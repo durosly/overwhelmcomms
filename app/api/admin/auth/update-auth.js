@@ -24,8 +24,6 @@ async function updateAuth(request) {
 		const users = await UserModel.find({}).limit(1);
 		const user = users[0];
 
-		console.log(user);
-
 		user.email = email;
 		user.password = password;
 
