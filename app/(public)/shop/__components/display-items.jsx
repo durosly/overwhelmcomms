@@ -200,8 +200,11 @@ function DisplayItems() {
 											<span>{item.category}</span>
 										</p>
 										<div className="flex flex-wrap gap-2">
-											{item.features.map((feature) => (
-												<span className="badge">
+											{item.features.map((feature, i) => (
+												<span
+													key={`${feature}-${i}`}
+													className="badge"
+												>
 													{feature}
 												</span>
 											))}

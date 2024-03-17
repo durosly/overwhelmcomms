@@ -198,11 +198,11 @@ function AboutUsPage() {
 								Flexibility and Adaptability
 							</h3>
 							<p>
-								We understand that plans can change, and we're
-								always ready to adapt and pivot to ensure that
-								your event or communication initiative remains
-								on track and achieves its goals, no matter what
-								challenges arise.
+								We understand that plans can change, and
+								we&apos;re always ready to adapt and pivot to
+								ensure that your event or communication
+								initiative remains on track and achieves its
+								goals, no matter what challenges arise.
 							</p>
 						</div>
 					</FadeAnimation>

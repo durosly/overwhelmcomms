@@ -78,9 +78,9 @@ function ServicesPage() {
 							<p className="pl-10">
 								Elevate your educational and social events with
 								our professional coordination services. Whether
-								it's a conference, seminar, or networking event,
-								we specialize in creating engaging and impactful
-								experiences for all attendees.
+								it&apos;s a conference, seminar, or networking
+								event, we specialize in creating engaging and
+								impactful experiences for all attendees.
 							</p>
 						</div>
 						<div>
@@ -94,8 +94,8 @@ function ServicesPage() {
 							</div>
 							<p className="pl-10">
 								Unlock the power of effective communication with
-								our strategic consulting services. We'll help
-								you craft compelling messages, build strong
+								our strategic consulting services. We&apos;ll
+								help you craft compelling messages, build strong
 								relationships, and navigate any communication
 								challenges to ensure your voice is heard loud
 								and clear.
@@ -113,8 +113,8 @@ function ServicesPage() {
 							<p className="pl-10">
 								Engage your audience like never before with our
 								expert podcast production services. From content
-								development to distribution strategy, we'll help
-								you create captivating audio content that
+								development to distribution strategy, we&apos;ll
+								help you create captivating audio content that
 								resonates with your target audience.
 							</p>
 						</div>
@@ -128,11 +128,12 @@ function ServicesPage() {
 								</h2>
 							</div>
 							<p className="pl-10">
-								Drive your product's success with our tailored
-								marketing and management solutions. We'll
-								develop comprehensive strategies to launch,
-								promote, and manage your products effectively,
-								ensuring maximum exposure and profitability.
+								Drive your product&apos;s success with our
+								tailored marketing and management solutions.
+								We&apos;ll develop comprehensive strategies to
+								launch, promote, and manage your products
+								effectively, ensuring maximum exposure and
+								profitability.
 							</p>
 						</div>
 						<div>
@@ -148,8 +149,8 @@ function ServicesPage() {
 								Amplify your online presence and boost sales
 								with our innovative merchandising strategies.
 								From e-commerce optimization to compelling
-								product displays, we'll help you showcase your
-								offerings in the best possible light.
+								product displays, we&apos;ll help you showcase
+								your offerings in the best possible light.
 							</p>
 						</div>
 						<div>
@@ -166,7 +167,7 @@ function ServicesPage() {
 								and gain access to expert advice and guidance
 								across various business areas. Whether you need
 								strategic planning, market analysis, or
-								operational support, we're here to help you
+								operational support, we&apos;re here to help you
 								achieve your goals.
 							</p>
 						</div>

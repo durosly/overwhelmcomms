@@ -340,7 +340,8 @@ function Home() {
 					<p>
 						At Overwhelmcomms Solutions, we pride ourselves on
 						offering unparalleled services tailored to meet your
-						unique needs. Here's why we stand out from the crowd:
+						unique needs. Here&apos;s why we stand out from the
+						crowd:
 					</p>
 
 					<ul className="space-y-2 capitalize">
@@ -426,8 +427,8 @@ function Home() {
 
 				<p className="p-5 bg-primary/10 rounded-xl">
 					Experience the Overwhelmcomms Solutions difference today and
-					discover why we're the preferred choice for all your event
-					planning and consulting needs.
+					discover why we&apos;re the preferred choice for all your
+					event planning and consulting needs.
 				</p>
 			</div>
 
