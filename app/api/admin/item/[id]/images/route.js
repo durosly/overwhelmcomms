@@ -1,4 +1,4 @@
 import addPropertyImages from "./add-images";
-import removePropertyImage from "./delete-image";
+import removeItemImage from "./delete-image";
 
-export { addPropertyImages as POST, removePropertyImage as DELETE };
+export { addPropertyImages as POST, removeItemImage as DELETE };

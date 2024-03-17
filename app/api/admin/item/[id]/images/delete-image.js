@@ -1,12 +1,10 @@
 import cloudinary from "@/lib/cloudinary";
 import connectMongo from "@/lib/connectDB";
-import ApartmentModel, {
-	ApartmentUpdateImagessValidationSchema,
-} from "@/models/apartment";
+import ItemModel, { ItemUpdateImagessValidationSchema } from "@/models/item";
 import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 
-async function removePropertyImage(request, { params: { id } }) {
+async function removeItemImage(request, { params: { id } }) {
 	try {
 		await connectMongo();
 
@@ -19,7 +17,7 @@ async function removePropertyImage(request, { params: { id } }) {
 
 		const body = await request.json();
 
-		const valid = ApartmentUpdateImagessValidationSchema.safeParse(body);
+		const valid = ItemUpdateImagessValidationSchema.safeParse(body);
 
 		if (!valid.success) {
 			return NextResponse.json(
@@ -28,7 +26,7 @@ async function removePropertyImage(request, { params: { id } }) {
 			);
 		}
 
-		const apartment = await ApartmentModel.findByIdAndUpdate(id, {
+		const item = await ItemModel.findByIdAndUpdate(id, {
 			$pull: { images: { $in: valid.data.images } },
 		});
 
@@ -36,9 +34,9 @@ async function removePropertyImage(request, { params: { id } }) {
 			cloudinary.uploader.destroy(img);
 		});
 
-		if (!apartment) {
+		if (!item) {
 			return NextResponse.json(
-				{ status: false, message: "No apartment found" },
+				{ status: false, message: "No item found" },
 				{ status: 404 }
 			);
 		}
@@ -46,7 +44,7 @@ async function removePropertyImage(request, { params: { id } }) {
 		return NextResponse.json({
 			status: true,
 			message: "success",
-			apartment,
+			item,
 		});
 	} catch (error) {
 		console.log(error);
@@ -57,4 +55,4 @@ async function removePropertyImage(request, { params: { id } }) {
 	}
 }
 
-export default removePropertyImage;
+export default removeItemImage;
