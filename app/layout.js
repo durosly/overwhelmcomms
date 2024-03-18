@@ -33,12 +33,12 @@ export const metadata = {
 		siteName: "Overwhelmcomms LTD",
 		images: [
 			{
-				url: `/images/og-main.png`,
+				url: `/images/og.png`,
 				width: 800,
 				height: 600,
 			},
 			{
-				url: "/images/og-alt.png",
+				url: "/images/og.png",
 				width: 1800,
 				height: 1600,
 				alt: metaInfo.title,
@@ -49,7 +49,7 @@ export const metadata = {
 			title: metaInfo.title,
 			description: metaInfo.description,
 			creator: "@durosly_",
-			images: [`/images/og-main.png`],
+			images: [`/images/og.png`],
 		},
 		locale: "en_US",
 		type: "website",

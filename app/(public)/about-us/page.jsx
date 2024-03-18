@@ -156,11 +156,11 @@ function AboutUsPage() {
 								Exceptional Customer Service
 							</h3>
 							<p>
-								At Eventful Solutions, your satisfaction is our
-								top priority. We go above and beyond to provide
-								exceptional customer service, ensuring that
-								every interaction with us is smooth, efficient,
-								and enjoyable.
+								At Overwhelm Communication International, your
+								satisfaction is our top priority. We go above
+								and beyond to provide exceptional customer
+								service, ensuring that every interaction with us
+								is smooth, efficient, and enjoyable.
 							</p>
 						</div>
 					</FadeAnimation>

@@ -2,19 +2,14 @@ import FadeAnimation from "@/components/fade-animation";
 import serviceImg from "@/public/images/service.jpg";
 import Image from "next/image";
 import {
-	FiBatteryCharging,
-	FiCoffee,
-	FiMap,
-	FiPhoneCall,
-	FiSettings,
+	FiBook,
+	FiBriefcase,
+	FiCalendar,
+	FiMic,
+	FiPackage,
+	FiTrendingUp,
 	FiWifi,
 } from "react-icons/fi";
-import { FiPackage } from "react-icons/fi";
-import { FiTrendingUp } from "react-icons/fi";
-import { FiMic } from "react-icons/fi";
-import { FiBook } from "react-icons/fi";
-import { FiCalendar } from "react-icons/fi";
-import { FiBriefcase } from "react-icons/fi";
 
 export const metadata = { title: "Find out what else we can do for you" };
 
@@ -176,16 +171,16 @@ function ServicesPage() {
 			</div>
 			<FadeAnimation bottom>
 				<p className="mb-20">
-					At Overwhelmcomms Solutions, our comprehensive suite of
-					services is designed to offer you seamless event planning,
-					effective communications consulting, and dynamic online
-					broadcast solutions. We understand the importance of
+					At Overwhelm Communication International, our comprehensive
+					suite of services is designed to offer you seamless event
+					planning, effective communications consulting, and dynamic
+					online broadcast solutions. We understand the importance of
 					creating memorable experiences and providing strategic
 					guidance to ensure the success of your events and marketing
 					initiatives. Let us handle the details while you focus on
 					what matters most - engaging with your audience and
-					achieving your business goals. Experience the Overwhelmcomms
-					Solutions advantage today.
+					achieving your business goals. Experience the Overwhelm
+					Communication International advantage today.
 				</p>
 			</FadeAnimation>
 		</>

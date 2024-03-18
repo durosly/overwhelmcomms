@@ -1,20 +1,13 @@
-import logoWithText from "@/logos/logo-main-with-text.png";
 import logo from "@/logos/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { BsWhatsapp } from "react-icons/bs";
-import {
-	FiHome,
-	FiAlertCircle,
-	FiLayout,
-	FiMapPin,
-	FiLayers,
-} from "react-icons/fi";
-import { FiMic } from "react-icons/fi";
-import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import { Suspense } from "react";
+import { FaSpotify } from "react-icons/fa";
+import { FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { SiApplepodcasts } from "react-icons/si";
+import { FiAlertCircle, FiHome, FiLayers, FiMic } from "react-icons/fi";
 import NavLink from "./components/nav-links";
 import { NavigationEvents } from "./components/navigation-event";
-import { Suspense } from "react";
 
 export default function PublicLayout({ children }) {
 	return (
@@ -145,45 +138,43 @@ export default function PublicLayout({ children }) {
 						</Link>
 						<Link
 							className="link link-hover"
-							href="/locations"
+							href="/services"
 						>
-							Locations
-						</Link>
-						<Link
-							className="link link-hover"
-							href="/rooms"
-						>
-							Rooms
+							Services
 						</Link>
 					</nav>
 					<nav>
-						<header className="footer-title">Legal</header>
-						<a className="link link-hover">
-							Terms &amp; conditions
-						</a>
-						<a className="link link-hover">Policies</a>
-						{/* <a className="link link-hover">Cookie policy</a> */}
+						<header className="footer-title">Special</header>
+						<Link
+							href="/shop"
+							className="link link-hover"
+						>
+							Shop
+						</Link>
+						<Link
+							href="/podcast"
+							className="link link-hover"
+						>
+							Podcast
+						</Link>
 					</nav>
 					<nav>
 						<header className="footer-title">Social Media</header>
 						<div className="flex flex-wrap gap-3">
-							<a
-								href="/nice"
-								className=""
-							>
-								<FaXTwitter className="w-5 h-5 " />
+							<a>
+								<FaXTwitter className="w-5 h-5" />
 							</a>
-							<a
-								href="/nice"
-								className=""
-							>
-								<FaFacebookF className="w-5 h-5 " />
+							<a>
+								<FaYoutube className="w-5 h-5" />
 							</a>
-							<a
-								href="/nice"
-								className=""
-							>
-								<BsWhatsapp className="w-5 h-5 " />
+							<a>
+								<FaFacebookF className="w-5 h-5" />
+							</a>
+							<a href="">
+								<FaSpotify className="w-5 h-5" />
+							</a>
+							<a href="">
+								<SiApplepodcasts className="w-5 h-5" />
 							</a>
 						</div>
 					</nav>
@@ -234,12 +225,7 @@ export default function PublicLayout({ children }) {
 								<span>Podcast</span>
 							</NavLink>
 						</li>
-						<li>
-							<NavLink path="/locations">
-								<FiMapPin className="w-5 h-5" />
-								<span>Locations</span>
-							</NavLink>
-						</li>
+
 						<li>
 							<NavLink path="/services">
 								<FiLayers className="w-5 h-5" />

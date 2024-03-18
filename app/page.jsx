@@ -57,11 +57,11 @@ function Home() {
 											Services
 										</NavLink>
 									</li>
-									{/* <li>
-										<NavLink path="/locations">
-											Locations
+									<li>
+										<NavLink path="/podcast">
+											Podcast
 										</NavLink>
-									</li> */}
+									</li>
 									<li>
 										<NavLink path="/contact">
 											Contact
@@ -109,11 +109,11 @@ function Home() {
 							</Link>
 						</div>
 					</header>
-					<div className="md:flex gap-10">
+					<div className="lg:flex gap-10">
 						<div className=" md:w-1/2 space-y-10">
 							<div>
 								<h2 className="text-[24px] sm:text-[clamp(36px,_7vw,_50px)] font-bold mt-10 md:mt-20 uppercase">
-									Overwhelmming Comms
+									Overwhelmm Communications
 								</h2>
 								<p className="max-sm:text-sm">
 									Ignite your journey to unprecedented
@@ -208,12 +208,12 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="flex-1 md:w-1/2 relative max-md:mt-5">
-							<div className="relative  ">
+						<div className="flex-1 md:w-1/2 relative max-lg:mt-5">
+							<div className="relative max-lg:hidden">
 								<Image
 									src={coverOne}
 									placeholder="blur"
-									className="object-cover max-md:hidden"
+									className="object-cover "
 								/>
 							</div>
 
@@ -270,14 +270,11 @@ function Home() {
 							Our passion, Your entertainment
 						</h2>
 						<p className="text-sm">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Sapiente necessitatibus modi facilis ut
-							aliquam qui architecto unde, non totam alias ea,
-							magni dolorem expedita, sint quas! Illum fugiat
-							culpa repudiandae dolore delectus. Ab provident
-							recusandae adipisci excepturi numquam temporibus
-							ipsum qui incidunt, placeat repellendus, veritatis
-							in praesentium odio veniam soluta.
+							At Overwhelm Communication International, we are
+							committed to inspiring, redefining, and amplifying
+							possibilities with one event, idea, and product at a
+							time. Through our innovative solutions, creative
+							vision, and unwavering dedication.
 						</p>
 						<Link
 							href="/about-us"
@@ -338,10 +335,10 @@ function Home() {
 						<span className="text-primary">unique</span> from others
 					</h2>
 					<p>
-						At Overwhelmcomms Solutions, we pride ourselves on
-						offering unparalleled services tailored to meet your
-						unique needs. Here&apos;s why we stand out from the
-						crowd:
+						At Overwhelm Communication International, we pride
+						ourselves on offering unparalleled services tailored to
+						meet your unique needs. Here&apos;s why we stand out
+						from the crowd:
 					</p>
 
 					<ul className="space-y-2 capitalize">
@@ -426,9 +423,9 @@ function Home() {
 				</div>
 
 				<p className="p-5 bg-primary/10 rounded-xl">
-					Experience the Overwhelmcomms Solutions difference today and
-					discover why we&apos;re the preferred choice for all your
-					event planning and consulting needs.
+					Experience the Overwhelm Communication International
+					difference today and discover why we&apos;re the preferred
+					choice for all your event planning and consulting needs.
 				</p>
 			</div>
 
@@ -468,23 +465,60 @@ function Home() {
 			<footer className="footer p-10 bg-primary text-white ">
 				<nav>
 					<h6 className="footer-title">Services</h6>
-					<a className="link link-hover">Branding</a>
-					<a className="link link-hover">Design</a>
-					<a className="link link-hover">Marketing</a>
-					<a className="link link-hover">Advertisement</a>
+					<Link
+						href="/services"
+						className="link link-hover"
+					>
+						Event management
+					</Link>
+					<Link
+						href="/services"
+						className="link link-hover"
+					>
+						Podcast production
+					</Link>
+					<Link
+						href="/services"
+						className="link link-hover"
+					>
+						Product marketing
+					</Link>
+					<Link
+						href="/services"
+						className="link link-hover"
+					>
+						Communication consultants
+					</Link>
 				</nav>
 				<nav>
 					<h6 className="footer-title">Company</h6>
-					<a className="link link-hover">About us</a>
-					<a className="link link-hover">Contact</a>
-					<a className="link link-hover">Jobs</a>
-					<a className="link link-hover">Press kit</a>
+					<Link
+						href="/about-us"
+						className="link link-hover"
+					>
+						About us
+					</Link>
+					<Link
+						href="/contact"
+						className="link link-hover"
+					>
+						Contact
+					</Link>
 				</nav>
 				<nav>
-					<h6 className="footer-title">Legal</h6>
-					<a className="link link-hover">Terms of use</a>
-					<a className="link link-hover">Privacy policy</a>
-					<a className="link link-hover">Cookie policy</a>
+					<h6 className="footer-title">Special</h6>
+					<Link
+						href="/shop"
+						className="link link-hover"
+					>
+						Shop
+					</Link>
+					<Link
+						href="/podcast"
+						className="link link-hover"
+					>
+						Podcast
+					</Link>
 				</nav>
 			</footer>
 			<div className="bg-base-200">
@@ -532,7 +566,7 @@ function Home() {
 						/>
 					</div>
 					<p>
-						Overwhelmcomms Ltd. <br />
+						Overwhelm Communication International. <br />
 						Inspire, Redefine &amp; Amplifying possibilities
 					</p>
 				</aside>
