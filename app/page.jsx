@@ -22,6 +22,7 @@ import { SiApplepodcasts } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import NavLink from "./(public)/components/nav-links";
+import FadeAnimation from "@/components/fade-animation";
 
 export const metadata = { title: "Your One-Stop Consulting Hub" };
 
@@ -242,14 +243,18 @@ function Home() {
 							</div>
 						</div>
 					</div>
-
-					<div className="mx-auto max-w-sm flex gap-4 items-center bg-success/50 p-5 rounded-btn mt-20">
-						<LuSparkles className="w-5 h-5" />
-						<p className="text-xs">
-							Best comprehensive consulting company in Africa
-						</p>
-						<LuSparkles className="w-5 h-5" />
-					</div>
+					<FadeAnimation
+						bottom
+						ssrReveal
+					>
+						<div className="mx-auto max-w-sm flex gap-4 items-center bg-success/50 p-5 rounded-btn mt-20">
+							<LuSparkles className="w-5 h-5" />
+							<p className="text-xs">
+								Best comprehensive consulting company in Africa
+							</p>
+							<LuSparkles className="w-5 h-5" />
+						</div>
+					</FadeAnimation>
 				</div>
 			</div>
 			<svg
@@ -266,22 +271,40 @@ function Home() {
 			<div className="bg-primary px-5 sm:px-10 md:px-20 pb-10">
 				<div className="flex gap-10 bg-fruit">
 					<div className="flex-1 text-white space-y-5">
-						<h2 className="text-4xl">
-							Our passion, Your entertainment
-						</h2>
-						<p className="text-sm">
-							At Overwhelm Communication International, we are
-							committed to inspiring, redefining, and amplifying
-							possibilities with one event, idea, and product at a
-							time. Through our innovative solutions, creative
-							vision, and unwavering dedication.
-						</p>
-						<Link
-							href="/about-us"
-							className="btn btn-secondary"
+						<FadeAnimation
+							top
+							ssrReveal
 						>
-							Learn more...
-						</Link>
+							<h2 className="text-4xl">
+								Our passion, Your entertainment
+							</h2>
+						</FadeAnimation>
+						<FadeAnimation
+							bottom
+							delay={400}
+							ssrReveal
+						>
+							<p className="text-sm">
+								At Overwhelm Communication International, we are
+								committed to inspiring, redefining, and
+								amplifying possibilities with one event, idea,
+								and product at a time. Through our innovative
+								solutions, creative vision, and unwavering
+								dedication.
+							</p>
+						</FadeAnimation>
+						<FadeAnimation
+							left
+							delay={800}
+							ssrReveal
+						>
+							<Link
+								href="/about-us"
+								className="btn btn-secondary"
+							>
+								Learn more...
+							</Link>
+						</FadeAnimation>
 					</div>
 					{/* <div className="flex-1"></div> */}
 				</div>
@@ -330,103 +353,143 @@ function Home() {
 					</div>
 				</div>
 				<div className="flex-1 space-y-5">
-					<h2 className="text-4xl font-bold">
-						What makes us{" "}
-						<span className="text-primary">unique</span> from others
-					</h2>
-					<p>
-						At Overwhelm Communication International, we pride
-						ourselves on offering unparalleled services tailored to
-						meet your unique needs. Here&apos;s why we stand out
-						from the crowd:
-					</p>
-
-					<ul className="space-y-2 capitalize">
-						<li className="flex gap-5 items-center">
-							<LuCheckCircle className="w-5 text-success" />
-							<p>We prefer a Tailored Approach.</p>
-						</li>
-						<li className="flex gap-5 items-center">
-							<LuCheckCircle className="w-5 text-success" />
-							<p>
-								We provide Expertise Across several Industries.
-							</p>
-						</li>
-						<li className="flex gap-5 items-center">
-							<LuCheckCircle className="w-5 text-success" />
-							<p>We are Customer-Centric.</p>
-						</li>
-						<li className="flex gap-5 items-center">
-							<LuCheckCircle className="w-5 text-success" />
-							<p>We provide Innovative Solutions.</p>
-						</li>
-						<li className="flex gap-5 items-center">
-							<LuCheckCircle className="w-5 text-success" />
-							<p>We pay Attention to Detail.</p>
-						</li>
-						<li className="flex gap-5 items-center">
-							<LuCheckCircle className="w-5 text-success" />
-							<p>We provide Seamless Execution.</p>
-						</li>
-					</ul>
+					<FadeAnimation
+						right
+						ssrReveal
+					>
+						<h2 className="text-4xl font-bold">
+							What makes us{" "}
+							<span className="text-primary">unique</span> from
+							others
+						</h2>
+					</FadeAnimation>
+					<FadeAnimation
+						left
+						ssrReveal
+						delay={400}
+					>
+						<p>
+							At Overwhelm Communication International, we pride
+							ourselves on offering unparalleled services tailored
+							to meet your unique needs. Here&apos;s why we stand
+							out from the crowd:
+						</p>
+					</FadeAnimation>
+					<FadeAnimation
+						top
+						ssrReveal
+						delay={600}
+						cascade
+					>
+						<ul className="space-y-2 capitalize">
+							<li className="flex gap-5 items-center">
+								<LuCheckCircle className="w-5 text-success" />
+								<p>We prefer a Tailored Approach.</p>
+							</li>
+							<li className="flex gap-5 items-center">
+								<LuCheckCircle className="w-5 text-success" />
+								<p>
+									We provide Expertise Across several
+									Industries.
+								</p>
+							</li>
+							<li className="flex gap-5 items-center">
+								<LuCheckCircle className="w-5 text-success" />
+								<p>We are Customer-Centric.</p>
+							</li>
+							<li className="flex gap-5 items-center">
+								<LuCheckCircle className="w-5 text-success" />
+								<p>We provide Innovative Solutions.</p>
+							</li>
+							<li className="flex gap-5 items-center">
+								<LuCheckCircle className="w-5 text-success" />
+								<p>We pay Attention to Detail.</p>
+							</li>
+							<li className="flex gap-5 items-center">
+								<LuCheckCircle className="w-5 text-success" />
+								<p>We provide Seamless Execution.</p>
+							</li>
+						</ul>
+					</FadeAnimation>
 				</div>
 			</div>
 
 			<div className="px-5 sm:px-10 md:px-20 space-y-10 text-center mb-10">
-				<h2 className="text-4xl font-bold">
-					What we do <span className="text-primary">best</span>
-				</h2>
+				<FadeAnimation
+					top
+					ssrReveal
+				>
+					<h2 className="text-4xl font-bold">
+						What we do <span className="text-primary">best</span>
+					</h2>
+				</FadeAnimation>
 
-				<div className="flex flex-wrap gap-5">
-					<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
-						<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
-							<LuCake className="w-10 h-10 text-primary" />
+				<FadeAnimation
+					bottom
+					ssrReveal
+					cascade
+					delay={300}
+				>
+					<div className="flex flex-wrap gap-5">
+						<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
+							<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
+								<LuCake className="w-10 h-10 text-primary" />
+							</div>
+							<h3 className="text-xl font-semibold">Events</h3>
+							<p>
+								We specialize in planning and managing events
+								whether educational or social
+							</p>
 						</div>
-						<h3 className="text-xl font-semibold">Events</h3>
-						<p>
-							We specialize in planning and managing events
-							whether educational or social
-						</p>
-					</div>
-					<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
-						<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
-							<LuSmartphoneNfc className="w-10 h-10 text-primary" />
+						<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
+							<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
+								<LuSmartphoneNfc className="w-10 h-10 text-primary" />
+							</div>
+							<h3 className="text-xl font-semibold">
+								Communication
+							</h3>
+							<p>
+								We specialize in planning and managing events
+								whether educational or social
+							</p>
 						</div>
-						<h3 className="text-xl font-semibold">Communication</h3>
-						<p>
-							We specialize in planning and managing events
-							whether educational or social
-						</p>
-					</div>
-					<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
-						<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
-							<LuWifi className="w-10 h-10 text-primary" />
+						<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
+							<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
+								<LuWifi className="w-10 h-10 text-primary" />
+							</div>
+							<h3 className="text-xl font-semibold">
+								Online broadcast
+							</h3>
+							<p>
+								We specialize in planning and managing events
+								whether educational or social
+							</p>
 						</div>
-						<h3 className="text-xl font-semibold">
-							Online broadcast
-						</h3>
-						<p>
-							We specialize in planning and managing events
-							whether educational or social
-						</p>
-					</div>
-					<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
-						<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
-							<LuShoppingBag className="w-10 h-10 text-primary" />
+						<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
+							<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
+								<LuShoppingBag className="w-10 h-10 text-primary" />
+							</div>
+							<h3 className="text-xl font-semibold">Marketing</h3>
+							<p>
+								We specialize in planning and managing events
+								whether educational or social
+							</p>
 						</div>
-						<h3 className="text-xl font-semibold">Marketing</h3>
-						<p>
-							We specialize in planning and managing events
-							whether educational or social
-						</p>
 					</div>
-				</div>
+				</FadeAnimation>
 
-				<p className="p-5 bg-primary/10 rounded-xl">
-					Experience the Overwhelm Communication International
-					difference today and discover why we&apos;re the preferred
-					choice for all your event planning and consulting needs.
-				</p>
+				<FadeAnimation
+					bottom
+					delay={600}
+					ssrReveal
+				>
+					<p className="p-5 bg-primary/10 rounded-xl">
+						Experience the Overwhelm Communication International
+						difference today and discover why we&apos;re the
+						preferred choice for all your event planning and
+						consulting needs.
+					</p>
+				</FadeAnimation>
 			</div>
 
 			<svg
