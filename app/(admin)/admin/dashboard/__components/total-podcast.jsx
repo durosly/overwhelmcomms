@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import commaNumber from "comma-number";
-import { FiHome } from "react-icons/fi";
+import { FiMic } from "react-icons/fi";
 import Skeleton from "react-loading-skeleton";
 
 function TotalPodcast() {
@@ -17,7 +17,7 @@ function TotalPodcast() {
 	return (
 		<div className="flex-1 card bg-base-100">
 			<div className="card-body ">
-				<FiHome className="w-7 h-7 stroke-green-600" />
+				<FiMic className="w-7 h-7 stroke-green-600" />
 				<p>Total podcast</p>
 				{isError ? (
 					<p>{error.message} </p>

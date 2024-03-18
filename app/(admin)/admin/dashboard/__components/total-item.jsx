@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import commaNumber from "comma-number";
-import { FiUsers } from "react-icons/fi";
+import { FiPackage } from "react-icons/fi";
 import Skeleton from "react-loading-skeleton";
 
 function TotalItems() {
@@ -17,7 +17,7 @@ function TotalItems() {
 	return (
 		<div className="flex-1 card bg-base-100">
 			<div className="card-body ">
-				<FiUsers className="w-7 h-7 stroke-blue-600" />
+				<FiPackage className="w-7 h-7 stroke-blue-600" />
 				<p>Shop Items</p>
 				{isError ? (
 					<p>{error.message} </p>
