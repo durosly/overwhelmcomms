@@ -29,7 +29,7 @@ export const metadata = { title: "Your One-Stop Consulting Hub" };
 function Home() {
 	return (
 		<>
-			<div>
+			<div className="bg-top ">
 				<div className="px-5 sm:px-10 md:px-20">
 					<header className="navbar ">
 						<div className="navbar-start">
@@ -114,7 +114,7 @@ function Home() {
 						<div className=" md:w-1/2 space-y-10">
 							<div>
 								<h2 className="text-[24px] sm:text-[clamp(36px,_7vw,_50px)] font-bold mt-10 md:mt-20 uppercase">
-									Overwhelmm Communications
+									Overwhelm Communications
 								</h2>
 								<p className="max-sm:text-sm">
 									Ignite your journey to unprecedented
@@ -243,18 +243,7 @@ function Home() {
 							</div>
 						</div>
 					</div>
-					<FadeAnimation
-						bottom
-						ssrReveal
-					>
-						<div className="mx-auto max-w-sm flex gap-4 items-center bg-success/50 p-5 rounded-btn mt-20">
-							<LuSparkles className="w-5 h-5" />
-							<p className="text-xs">
-								Best comprehensive consulting company in Africa
-							</p>
-							<LuSparkles className="w-5 h-5" />
-						</div>
-					</FadeAnimation>
+					<div className="p-5 mt-20"></div>
 				</div>
 			</div>
 			<svg
