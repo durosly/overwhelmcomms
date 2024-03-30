@@ -1,36 +1,30 @@
+import FadeAnimation from "@/components/fade-animation";
 import logo from "@/logos/logo.png";
+import spotfiyImg from "@/public/images/spotify.png";
 import Image from "next/image";
 import Link from "next/link";
-import spotfiyImg from "@/public/images/spotify.png";
-import coverOne from "@/public/images/cover-1.png";
-import { LuMusic4 } from "react-icons/lu";
-import { LuPause } from "react-icons/lu";
-import { LuSkipForward } from "react-icons/lu";
-import { LuStepBack } from "react-icons/lu";
-import { LuShuffle } from "react-icons/lu";
-import { LuRepeat } from "react-icons/lu";
-import { LuSparkles } from "react-icons/lu";
-import { LuAlignLeft } from "react-icons/lu";
-import { LuCheckCircle } from "react-icons/lu";
-import { LuCake } from "react-icons/lu";
-import { LuShoppingBag } from "react-icons/lu";
-import { LuWifi } from "react-icons/lu";
-import { LuSmartphoneNfc } from "react-icons/lu";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaSpotify } from "react-icons/fa";
+import { FaFacebookF, FaSpotify } from "react-icons/fa";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
+import {
+	LuAlignLeft,
+	LuArrowRightCircle,
+	LuCake,
+	LuCheckCircle,
+	LuPlayCircle,
+	LuShoppingBag,
+	LuSmartphoneNfc,
+	LuWifi,
+} from "react-icons/lu";
 import { SiApplepodcasts } from "react-icons/si";
-import { FaFacebookF } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa6";
 import NavLink from "./(public)/components/nav-links";
-import FadeAnimation from "@/components/fade-animation";
 
 export const metadata = { title: "Your One-Stop Consulting Hub" };
 
 function Home() {
 	return (
 		<>
-			<div className="bg-top ">
-				<div className="px-5 sm:px-10 md:px-20">
+			<div className="bg-wave bg-contain bg-center">
+				<div className="px-5 sm:px-10 md:px-20 bg-base-100/75">
 					<header className="navbar ">
 						<div className="navbar-start">
 							<div className="dropdown md:hidden">
@@ -110,10 +104,10 @@ function Home() {
 							</Link>
 						</div>
 					</header>
-					<div className="lg:flex gap-10">
-						<div className=" md:w-1/2 space-y-10">
-							<div>
-								<h2 className="text-[24px] sm:text-[clamp(36px,_7vw,_50px)] font-bold mt-10 md:mt-20 uppercase">
+					<div className="relative justify-center text-center">
+						<div className="max-w-4xl mx-auto space-y-10 pt-10 rounded-md">
+							<div className="mb-10">
+								<h2 className="text-[30px] sm:text-[30px] md:text-[50px] lg:text-[80px] leading-tight font-bold uppercase mb-5">
 									Overwhelm Communications
 								</h2>
 								<p className="max-sm:text-sm">
@@ -126,124 +120,108 @@ function Home() {
 									where your aspirations know no bounds.
 								</p>
 							</div>
-							<div className="flex flex-wrap gap-5">
+							<div className="flex justify-center flex-wrap gap-5">
 								<Link
 									className="btn btn-primary md:btn-wide"
 									href="/about-us"
 								>
-									Learn more...
+									Learn more
+									<LuArrowRightCircle className="w-6 h-6" />
 								</Link>
 
 								<Link
 									className="btn"
 									href="/shop"
 								>
-									Shop with us
+									<span className="max-w-0 overflow-hidden">
+										Shop with us
+									</span>
+									<LuShoppingBag className="w-5 h-5" />
 								</Link>
 							</div>
 
-							<div className="flex gap-5 flex-wrap mt-10">
-								<div className="flex gap-3">
-									<div>
-										<svg
-											viewBox="0 0 85 85"
-											xmlns="http://www.w3.org/2000/svg"
-											className="w-10 h-10"
-										>
-											<linearGradient
-												id="a"
-												gradientTransform="matrix(1 0 0 -1 0 -164)"
-												gradientUnits="userSpaceOnUse"
-												x1="42.5"
-												x2="42.5"
-												y1="-165.5"
-												y2="-247.4998"
+							<div className="mt-10">
+								<h3 className="italic">Listen us on</h3>
+								<div className="flex justify-center gap-5 flex-wrap mt-2">
+									<div className="flex gap-3">
+										<div>
+											<svg
+												viewBox="0 0 85 85"
+												xmlns="http://www.w3.org/2000/svg"
+												className="w-10 h-10"
 											>
-												<stop
-													offset="0"
-													stopColor="#d56efc"
-												></stop>
-												<stop
-													offset="1"
-													stopColor="#832bc1"
-												></stop>
-											</linearGradient>
-											<path
-												d="m0 0h85v85h-85z"
-												fill="none"
-											></path>
-											<path
-												d="m83.5 27.15c0-.98 0-1.96-.01-2.94-.01-.83-.01-1.65-.04-2.47-.05-1.8-.15-3.61-.47-5.39-.32-1.8-.85-3.48-1.69-5.12-.82-1.61-1.89-3.08-3.17-4.36s-2.75-2.35-4.36-3.17c-1.64-.83-3.32-1.36-5.12-1.69-1.78-.32-3.59-.43-5.39-.47-.82-.02-1.65-.03-2.47-.04-.97 0-1.95 0-2.93 0h-30.7c-.98 0-1.96 0-2.94.01-.83.01-1.65.01-2.47.04-1.8.05-3.61.15-5.39.47-1.8.32-3.48.85-5.12 1.69-1.61.81-3.08 1.88-4.36 3.16s-2.35 2.75-3.17 4.36c-.83 1.64-1.36 3.32-1.69 5.12-.32 1.78-.43 3.59-.47 5.38-.02.82-.03 1.65-.04 2.47v2.95 30.7c0 .98 0 1.96.01 2.94.01.83.01 1.65.04 2.47.05 1.8.15 3.61.47 5.39.32 1.8.85 3.48 1.69 5.12.82 1.61 1.89 3.08 3.17 4.36s2.75 2.35 4.36 3.17c1.64.83 3.32 1.36 5.12 1.69 1.78.32 3.59.43 5.39.47.82.02 1.65.03 2.47.04.98.01 1.96.01 2.94.01h30.7c.98 0 1.96 0 2.94-.01.83-.01 1.65-.01 2.47-.04 1.8-.05 3.61-.15 5.39-.47 1.8-.32 3.48-.85 5.12-1.69 1.61-.82 3.08-1.89 4.36-3.17s2.35-2.75 3.17-4.36c.83-1.64 1.36-3.32 1.69-5.12.32-1.78.43-3.59.47-5.39.02-.82.03-1.65.04-2.47.01-.98.01-1.96.01-2.94z"
-												fill="url(#a)"
-											></path>
-											<path
-												d="m42.47 31.32c3.39 0 6.14 2.75 6.14 6.13 0 3.39-2.75 6.13-6.14 6.13s-6.14-2.75-6.14-6.13c.01-3.38 2.76-6.13 6.14-6.13zm17.67 8.28c0 6.05-3.06 11.4-7.72 14.59-.24.16-.56-.02-.54-.31.07-1.08.09-2.03.03-3.01-.02-.32.11-.64.34-.86 2.78-2.61 4.52-6.31 4.52-10.41 0-8.06-6.72-14.59-14.85-14.27-7.48.29-13.52 6.4-13.72 13.89-.11 4.25 1.65 8.11 4.51 10.8.24.22.36.53.34.86-.06.98-.04 1.93.03 3.01.02.29-.3.47-.54.31-4.72-3.22-7.8-8.67-7.72-14.82.12-9.35 7.62-17.05 16.96-17.41 10.05-.4 18.36 7.67 18.36 17.63zm-17.74-26.35c14.57-.04 26.44 11.8 26.44 26.36 0 11.48-7.38 21.26-17.64 24.87-.25.09-.51-.12-.47-.38.14-.9.26-1.81.38-2.7.04-.31.24-.59.53-.71 8.13-3.55 13.82-11.66 13.82-21.07 0-12.74-10.42-23.09-23.18-22.98-12.48.08-22.68 10.26-22.8 22.74-.09 9.51 5.63 17.72 13.82 21.3.29.13.49.4.53.71.12.89.25 1.8.38 2.7.04.26-.22.47-.47.38-10.36-3.64-17.78-13.58-17.64-25.2.19-14.34 11.95-25.98 26.3-26.02zm.07 32.82c2.33 0 4.31.76 5.43 1.95.59.62.9 1.25 1 2.16.19 1.75.08 3.26-.12 5.67-.2 2.3-.57 5.36-1.05 8.48-.34 2.22-.62 3.42-.88 4.28-.41 1.39-1.96 2.61-4.38 2.61s-3.96-1.22-4.38-2.61c-.26-.86-.54-2.06-.88-4.28-.48-3.12-.86-6.18-1.05-8.48-.21-2.41-.31-3.92-.12-5.67.1-.9.41-1.54 1-2.16 1.12-1.19 3.1-1.95 5.43-1.95z"
-												fill="#fff"
-											></path>
-										</svg>
+												<linearGradient
+													id="a"
+													gradientTransform="matrix(1 0 0 -1 0 -164)"
+													gradientUnits="userSpaceOnUse"
+													x1="42.5"
+													x2="42.5"
+													y1="-165.5"
+													y2="-247.4998"
+												>
+													<stop
+														offset="0"
+														stopColor="#d56efc"
+													></stop>
+													<stop
+														offset="1"
+														stopColor="#832bc1"
+													></stop>
+												</linearGradient>
+												<path
+													d="m0 0h85v85h-85z"
+													fill="none"
+												></path>
+												<path
+													d="m83.5 27.15c0-.98 0-1.96-.01-2.94-.01-.83-.01-1.65-.04-2.47-.05-1.8-.15-3.61-.47-5.39-.32-1.8-.85-3.48-1.69-5.12-.82-1.61-1.89-3.08-3.17-4.36s-2.75-2.35-4.36-3.17c-1.64-.83-3.32-1.36-5.12-1.69-1.78-.32-3.59-.43-5.39-.47-.82-.02-1.65-.03-2.47-.04-.97 0-1.95 0-2.93 0h-30.7c-.98 0-1.96 0-2.94.01-.83.01-1.65.01-2.47.04-1.8.05-3.61.15-5.39.47-1.8.32-3.48.85-5.12 1.69-1.61.81-3.08 1.88-4.36 3.16s-2.35 2.75-3.17 4.36c-.83 1.64-1.36 3.32-1.69 5.12-.32 1.78-.43 3.59-.47 5.38-.02.82-.03 1.65-.04 2.47v2.95 30.7c0 .98 0 1.96.01 2.94.01.83.01 1.65.04 2.47.05 1.8.15 3.61.47 5.39.32 1.8.85 3.48 1.69 5.12.82 1.61 1.89 3.08 3.17 4.36s2.75 2.35 4.36 3.17c1.64.83 3.32 1.36 5.12 1.69 1.78.32 3.59.43 5.39.47.82.02 1.65.03 2.47.04.98.01 1.96.01 2.94.01h30.7c.98 0 1.96 0 2.94-.01.83-.01 1.65-.01 2.47-.04 1.8-.05 3.61-.15 5.39-.47 1.8-.32 3.48-.85 5.12-1.69 1.61-.82 3.08-1.89 4.36-3.17s2.35-2.75 3.17-4.36c.83-1.64 1.36-3.32 1.69-5.12.32-1.78.43-3.59.47-5.39.02-.82.03-1.65.04-2.47.01-.98.01-1.96.01-2.94z"
+													fill="url(#a)"
+												></path>
+												<path
+													d="m42.47 31.32c3.39 0 6.14 2.75 6.14 6.13 0 3.39-2.75 6.13-6.14 6.13s-6.14-2.75-6.14-6.13c.01-3.38 2.76-6.13 6.14-6.13zm17.67 8.28c0 6.05-3.06 11.4-7.72 14.59-.24.16-.56-.02-.54-.31.07-1.08.09-2.03.03-3.01-.02-.32.11-.64.34-.86 2.78-2.61 4.52-6.31 4.52-10.41 0-8.06-6.72-14.59-14.85-14.27-7.48.29-13.52 6.4-13.72 13.89-.11 4.25 1.65 8.11 4.51 10.8.24.22.36.53.34.86-.06.98-.04 1.93.03 3.01.02.29-.3.47-.54.31-4.72-3.22-7.8-8.67-7.72-14.82.12-9.35 7.62-17.05 16.96-17.41 10.05-.4 18.36 7.67 18.36 17.63zm-17.74-26.35c14.57-.04 26.44 11.8 26.44 26.36 0 11.48-7.38 21.26-17.64 24.87-.25.09-.51-.12-.47-.38.14-.9.26-1.81.38-2.7.04-.31.24-.59.53-.71 8.13-3.55 13.82-11.66 13.82-21.07 0-12.74-10.42-23.09-23.18-22.98-12.48.08-22.68 10.26-22.8 22.74-.09 9.51 5.63 17.72 13.82 21.3.29.13.49.4.53.71.12.89.25 1.8.38 2.7.04.26-.22.47-.47.38-10.36-3.64-17.78-13.58-17.64-25.2.19-14.34 11.95-25.98 26.3-26.02zm.07 32.82c2.33 0 4.31.76 5.43 1.95.59.62.9 1.25 1 2.16.19 1.75.08 3.26-.12 5.67-.2 2.3-.57 5.36-1.05 8.48-.34 2.22-.62 3.42-.88 4.28-.41 1.39-1.96 2.61-4.38 2.61s-3.96-1.22-4.38-2.61c-.26-.86-.54-2.06-.88-4.28-.48-3.12-.86-6.18-1.05-8.48-.21-2.41-.31-3.92-.12-5.67.1-.9.41-1.54 1-2.16 1.12-1.19 3.1-1.95 5.43-1.95z"
+													fill="#fff"
+												></path>
+											</svg>
+										</div>
+										<div>
+											<h3 className="text-sm opacity-50">
+												Podcast Platform
+											</h3>
+											<p className="text-sm font-bold">
+												Apple Podcast
+											</p>
+										</div>
 									</div>
-									<div>
-										<h3 className="text-sm opacity-50">
-											Podcast Platform
-										</h3>
-										<p className="text-sm font-bold">
-											Apple Podcast
-										</p>
-									</div>
-								</div>
-								<div className="flex gap-3">
-									<div className="relative w-10 h-10">
-										<Image
-											src={spotfiyImg}
-											fill
-										/>
-									</div>
-									<div>
-										<h3 className="text-sm opacity-50">
-											Podcast Platform
-										</h3>
-										<p className="text-sm font-bold">
-											Spotify Podcast
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="flex-1 md:w-1/2 relative max-lg:mt-5">
-							<div className="relative max-lg:hidden">
-								<Image
-									src={coverOne}
-									placeholder="blur"
-									className="object-cover "
-								/>
-							</div>
-
-							<div className=" w-5/6 bg-base-100 rounded-btn overflow-hidden border-2 flex">
-								<div className="w-16 h-16 bg-primary flex justify-center items-center ">
-									<LuMusic4 className="w-10 h-10" />
-								</div>
-								<div className="px-7 py-2 flex-1">
-									<div className="flex gap-5">
-										<LuRepeat />
-										<LuStepBack />
-										<LuPause />
-										<LuSkipForward />
-										<LuShuffle />
-									</div>
-									<div className="flex gap-3 items-center mt-2">
-										<span>03:14</span>
-										<progress
-											className="progress progress-primary w-full"
-											value="10"
-											max="100"
-										></progress>
-										<span>12:04</span>
+									<div className="flex gap-3">
+										<div className="relative w-10 h-10">
+											<Image
+												src={spotfiyImg}
+												fill
+											/>
+										</div>
+										<div>
+											<h3 className="text-sm opacity-50">
+												Podcast Platform
+											</h3>
+											<p className="text-sm font-bold">
+												Spotify Podcast
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="p-5 mt-20"></div>
+					{/* <div>
+						<div className="relative w-[300px] h-[300px]">
+							<Image
+								src={artImg}
+								fill
+								alt="Art"
+							/>
+						</div>
+					</div> */}
+					{/* <div class="bg-base-100 pointer-events-none sticky bottom-0 flex h-40 [mask-image:linear-gradient(transparent,#000000)]"></div> */}
+					{/* <div className="p-5 mt-20"></div> */}
 				</div>
 			</div>
 			<svg
@@ -257,45 +235,109 @@ function Home() {
 					d="M0,64L26.7,53.3C53.3,43,107,21,160,42.7C213.3,64,267,128,320,160C373.3,192,427,192,480,186.7C533.3,181,587,171,640,170.7C693.3,171,747,181,800,208C853.3,235,907,277,960,272C1013.3,267,1067,213,1120,181.3C1173.3,149,1227,139,1280,144C1333.3,149,1387,171,1413,181.3L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
 				/>
 			</svg>
-			<div className="bg-primary px-5 sm:px-10 md:px-20 pb-10">
-				<div className="flex gap-10 bg-fruit">
-					<div className="flex-1 text-white space-y-5">
-						<FadeAnimation
-							top
-							ssrReveal
-						>
-							<h2 className="text-4xl">
-								Our passion, Your entertainment
-							</h2>
-						</FadeAnimation>
-						<FadeAnimation
-							bottom
-							delay={400}
-							ssrReveal
-						>
-							<p className="text-sm">
-								At Overwhelm Communication International, we are
-								committed to inspiring, redefining, and
-								amplifying possibilities with one event, idea,
-								and product at a time. Through our innovative
-								solutions, creative vision, and unwavering
-								dedication.
+			<div className="bg-primary">
+				<div className="bg-fruit">
+					<div className="bg-primary/75 px-5 sm:px-10 md:px-20 pb-10">
+						<div className="mb-10 text-center">
+							<p className="text-secondary">
+								What makes us special
 							</p>
-						</FadeAnimation>
-						<FadeAnimation
-							left
-							delay={800}
-							ssrReveal
-						>
-							<Link
-								href="/about-us"
-								className="btn btn-secondary"
-							>
-								Learn more...
-							</Link>
-						</FadeAnimation>
+							<div className=" text-white space-y-5">
+								<FadeAnimation
+									top
+									ssrReveal
+								>
+									<h2 className="text-4xl capitalize">
+										Our passion, Your entertainment
+									</h2>
+								</FadeAnimation>
+								<FadeAnimation
+									bottom
+									delay={400}
+									ssrReveal
+								>
+									<p className="text-sm">
+										At Overwhelm Communication
+										International, we are committed to
+										inspiring, redefining, and amplifying
+										possibilities with one event, idea, and
+										product at a time. Through our
+										innovative solutions, creative vision,
+										and unwavering dedication.
+									</p>
+								</FadeAnimation>
+								<FadeAnimation
+									left
+									delay={800}
+									ssrReveal
+								>
+									<Link
+										href="/about-us"
+										className="btn btn-secondary"
+									>
+										Learn more...
+									</Link>
+								</FadeAnimation>
+							</div>
+							{/* <div className="flex-1"></div> */}
+						</div>
+
+						<div>
+							<h2 className="text-4xl text-white text-center mb-10">
+								Recent podcast episodes
+							</h2>
+
+							<div className="flex flex-wrap gap-5">
+								{Array(5)
+									.fill(4)
+									.map((_, i) => (
+										<div
+											key={i}
+											className="max-w-[350px] border border-base-100 rounded-box overflow-hidden"
+										>
+											<div className="bg-red-500 h-56 relative">
+												<Image
+													src={`/images/service.jpg`}
+													alt={`service`}
+													className="object-cover"
+													fill
+												/>
+											</div>
+											<div className="bg-base-100 p-2">
+												<div className="flex justify-between gap-5 text-sm text-gray-500 border-b py-1 mb-2">
+													<p>Lorem, ipsum.</p>
+													<p>13 Mar, 2024</p>
+												</div>
+												<div className="flex justify-between gap-5">
+													<h3 className="font-bold">
+														Lorem ipsum dolor sit
+														amet consectetur
+														adipisicing elit. Odio,
+														doloribus?
+													</h3>
+													<a
+														href={`/nice`}
+														className="flex items-center self-start gap-2 whitespace-nowrap"
+													>
+														<span>Listen now</span>
+														<LuPlayCircle className="w-5 h-5" />
+													</a>
+												</div>
+											</div>
+										</div>
+									))}
+							</div>
+
+							<div className="text-center mt-5">
+								<Link
+									href="/podcast"
+									className="btn btn-secondary"
+								>
+									See all
+								</Link>
+							</div>
+						</div>
 					</div>
-					{/* <div className="flex-1"></div> */}
 				</div>
 			</div>
 			<svg
@@ -332,10 +374,10 @@ function Home() {
 			</svg>
 
 			<div className="flex max-sm:flex-col gap-5 px-5 sm:px-10 md:px-20 mt-10 mb-14">
-				<div className="flex-1">
-					<div className="relative aspect-square sm:h-[400px] rounded-2xl overflow-hidden">
+				<div className="">
+					<div className="relative bg-base-200 aspect-square sm:h-[400px] rounded-2xl overflow-hidden">
 						<Image
-							src="https://images.pexels.com/photos/2480072/pexels-photo-2480072.jpeg"
+							src="/images/overwhelm.png"
 							fill
 							className="object-cover"
 						/>
