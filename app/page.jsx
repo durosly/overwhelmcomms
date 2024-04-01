@@ -17,6 +17,7 @@ import {
 } from "react-icons/lu";
 import { SiApplepodcasts } from "react-icons/si";
 import NavLink from "./(public)/components/nav-links";
+import DisplayLatestPodcast from "./(public)/__components/display-latest-podcast";
 
 export const metadata = { title: "Your One-Stop Consulting Hub" };
 
@@ -133,7 +134,7 @@ function Home() {
 									className="btn"
 									href="/shop"
 								>
-									<span className="max-w-0 overflow-hidden">
+									<span className="max-w-0 hidden overflow-hidden">
 										Shop with us
 									</span>
 									<LuShoppingBag className="w-5 h-5" />
@@ -238,7 +239,7 @@ function Home() {
 			<div className="bg-primary">
 				<div className="bg-fruit">
 					<div className="bg-primary/75 px-5 sm:px-10 md:px-20 pb-10">
-						<div className="mb-10 text-center">
+						<div className="mb-20 text-center">
 							<p className="text-secondary">
 								What makes us special
 							</p>
@@ -273,7 +274,7 @@ function Home() {
 								>
 									<Link
 										href="/about-us"
-										className="btn btn-secondary"
+										className="btn "
 									>
 										Learn more...
 									</Link>
@@ -283,59 +284,14 @@ function Home() {
 						</div>
 
 						<div>
+							<p className="text-secondary text-center">
+								Podcast
+							</p>
 							<h2 className="text-4xl text-white text-center mb-10">
 								Recent podcast episodes
 							</h2>
 
-							<div className="flex flex-wrap gap-5">
-								{Array(5)
-									.fill(4)
-									.map((_, i) => (
-										<div
-											key={i}
-											className="max-w-[350px] border border-base-100 rounded-box overflow-hidden"
-										>
-											<div className="bg-red-500 h-56 relative">
-												<Image
-													src={`/images/service.jpg`}
-													alt={`service`}
-													className="object-cover"
-													fill
-												/>
-											</div>
-											<div className="bg-base-100 p-2">
-												<div className="flex justify-between gap-5 text-sm text-gray-500 border-b py-1 mb-2">
-													<p>Lorem, ipsum.</p>
-													<p>13 Mar, 2024</p>
-												</div>
-												<div className="flex justify-between gap-5">
-													<h3 className="font-bold">
-														Lorem ipsum dolor sit
-														amet consectetur
-														adipisicing elit. Odio,
-														doloribus?
-													</h3>
-													<a
-														href={`/nice`}
-														className="flex items-center self-start gap-2 whitespace-nowrap"
-													>
-														<span>Listen now</span>
-														<LuPlayCircle className="w-5 h-5" />
-													</a>
-												</div>
-											</div>
-										</div>
-									))}
-							</div>
-
-							<div className="text-center mt-5">
-								<Link
-									href="/podcast"
-									className="btn btn-secondary"
-								>
-									See all
-								</Link>
-							</div>
+							<DisplayLatestPodcast />
 						</div>
 					</div>
 				</div>
@@ -384,16 +340,21 @@ function Home() {
 					</div>
 				</div>
 				<div className="flex-1 space-y-5">
-					<FadeAnimation
-						right
-						ssrReveal
-					>
-						<h2 className="text-4xl font-bold">
-							What makes us{" "}
-							<span className="text-primary">unique</span> from
-							others
-						</h2>
-					</FadeAnimation>
+					<div>
+						<p className="text-secondary">
+							Not the regular service
+						</p>
+						<FadeAnimation
+							right
+							ssrReveal
+						>
+							<h2 className="text-4xl font-bold">
+								What makes us{" "}
+								<span className="text-primary">unique</span>{" "}
+								from others
+							</h2>
+						</FadeAnimation>
+					</div>
 					<FadeAnimation
 						left
 						ssrReveal
@@ -449,10 +410,20 @@ function Home() {
 				<FadeAnimation
 					top
 					ssrReveal
+					cascade
 				>
-					<h2 className="text-4xl font-bold">
-						What we do <span className="text-primary">best</span>
-					</h2>
+					<div>
+						<p className="text-secondary">Premium services</p>
+						<h2 className="text-4xl font-bold">
+							We offer the <span className="">best</span> for you
+						</h2>
+						<p className="mt-5">
+							With our expertise, dedication to excellence, and
+							proven track record of success, we are confident
+							that choosing us means choosing unparalleled quality
+							and service.
+						</p>
+					</div>
 				</FadeAnimation>
 
 				<FadeAnimation
@@ -463,8 +434,8 @@ function Home() {
 				>
 					<div className="flex flex-wrap gap-5">
 						<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
-							<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
-								<LuCake className="w-10 h-10 text-primary" />
+							<div className="w-20 aspect-square bg-neutral/10 rounded-full mx-auto flex justify-center items-center">
+								<LuCake className="w-10 h-10 text-neutral" />
 							</div>
 							<h3 className="text-xl font-semibold">Events</h3>
 							<p>
@@ -473,8 +444,8 @@ function Home() {
 							</p>
 						</div>
 						<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
-							<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
-								<LuSmartphoneNfc className="w-10 h-10 text-primary" />
+							<div className="w-20 aspect-square bg-info/10 rounded-full mx-auto flex justify-center items-center">
+								<LuSmartphoneNfc className="w-10 h-10 text-info" />
 							</div>
 							<h3 className="text-xl font-semibold">
 								Communication
@@ -485,8 +456,8 @@ function Home() {
 							</p>
 						</div>
 						<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
-							<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
-								<LuWifi className="w-10 h-10 text-primary" />
+							<div className="w-20 aspect-square bg-warning/10 rounded-full mx-auto flex justify-center items-center">
+								<LuWifi className="w-10 h-10 text-warning" />
 							</div>
 							<h3 className="text-xl font-semibold">
 								Online broadcast
@@ -497,8 +468,8 @@ function Home() {
 							</p>
 						</div>
 						<div className=" sm:w-[calc((100%_-_1_*_1.25rem)_/_2)] md:w-[calc((100%_-_3_*_1.25rem)_/_4)]">
-							<div className="w-20 aspect-square bg-primary/10 rounded-full mx-auto flex justify-center items-center">
-								<LuShoppingBag className="w-10 h-10 text-primary" />
+							<div className="w-20 aspect-square bg-success/10 rounded-full mx-auto flex justify-center items-center">
+								<LuShoppingBag className="w-10 h-10 text-success" />
 							</div>
 							<h3 className="text-xl font-semibold">Marketing</h3>
 							<p>
