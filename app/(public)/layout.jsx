@@ -116,12 +116,18 @@ export default function PublicLayout({ children }) {
 							Inspire, Redefine &amp; Amplifying possibilities
 						</p>
 					</aside>
-					{/* <nav>
+					<nav>
 						<header className="footer-title">Services</header>
+						<Link
+							className="link link-hover"
+							href="/services/amazon-kdb"
+						>
+							Amazon KDB
+						</Link>
 						<a className="link link-hover">Design</a>
 						<a className="link link-hover">Marketing</a>
 						<a className="link link-hover">Advertisement</a>
-					</nav> */}
+					</nav>
 					<nav>
 						<header className="footer-title">Company</header>
 						<Link
