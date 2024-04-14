@@ -531,6 +531,12 @@ function Home() {
 				<nav>
 					<h6 className="footer-title">Services</h6>
 					<Link
+						href="/services/amazon-kdb"
+						className="link link-hover"
+					>
+						Amazon KDP
+					</Link>
+					<Link
 						href="/services"
 						className="link link-hover"
 					>
