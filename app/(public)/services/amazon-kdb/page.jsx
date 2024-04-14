@@ -78,8 +78,9 @@ function AmazonKDB() {
 						<p className="pl-10">
 							Gain a competitive edge with our strategic marketing
 							strategies. From keyword optimization to targeted
-							advertising campaigns, we help amplify your book's
-							reach and drive traffic to your listings.
+							advertising campaigns, we help amplify your
+							book&apos;s reach and drive traffic to your
+							listings.
 						</p>
 					</div>
 					<div>
